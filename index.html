@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-VE" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conozca el sonido de las letras en español</title>
+
+  <!-- Protocolo OpenGraph -->
+  <meta property="og:title" content="Conozca el sonido de las letras en español" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <!-- Fuentes tipográficas -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="vista/css/normalize.css" />
+  <link rel="stylesheet" href="vista/css/style.css" />
+</head>
+
+<body>
+  <main id="app" class="main">
+    <audio src="{{ musica }}" loop="1" id="audio"></audio>
+
+    <header class="header main__inner main__inner--header">
+      <div class="header__item">
+        <h1>{{ title }}</h1>
+        <h3>{{ indicaciones }}</h3>
+      </div>
+
+      <div class="header__item">
+        <a href="#teclado" data-src="{{ teclado }}" class="icon icon--teclado">Teclado</a>
+      </div>
+    </header>
+
+    <div class="main__inner main__inner--content">
+      <div id="letra" class="letra"></div>
+    </div>
+
+    <footer class="footer main__inner main__inner--footer">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <div class="icon icon--teclado">
+            <a href="#teclados" class="icon__enlace" data-src="{{ teclado }}"></a>
+          </div>
+        </div>
+
+        <div class="autores">
+          <div class="autores__item">
+            (c) 2021 - {{ autor }} | Aprendizaje
+          </div>
+
+          <div class="autores__item">
+            Música - Snooter - <a href="https://joshwoodward.com/" target="_blank" class="autores__enlace" title="Josh Woodward">Josh Woodward</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="app/js/main.js" type="module"></script>
+</body>
+
+</html>

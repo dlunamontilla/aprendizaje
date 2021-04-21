@@ -1,0 +1,7 @@
+Herramientas
+*/*.md
+.sass-cache
+.vscode
+*.sql
+upload
+uploads

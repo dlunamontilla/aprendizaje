@@ -1,0 +1,212 @@
+.letra {
+    font: {
+        family: times;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 20ch;
+    }
+
+    @media screen and (min-width: 601px) {
+        font-size: 40ch;
+    }
+
+    transition: 300ms ease;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    &__inner {
+        flex-shrink: 1;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        &--header {
+            flex-grow: 0;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+
+            @media screen and (prefers-color-scheme: dark) {
+                background-color: rgba(white, 0.1);
+            }
+
+            @media screen and (prefers-color-scheme: light) {
+                background-color: darken($color-base, 10);
+                color: rgba(white, 0.8);
+                border-bottom: 1px solid rgba($color-base, 0.2);
+            }
+
+            h1,
+            h3 {
+                padding: 5px 0;
+                margin: 0;
+            }
+
+            @media screen and (max-width: 600px) {
+                flex-wrap: wrap;
+
+                h1 {
+                    font-size: 2ch;
+                }
+
+                h3 {
+                    font-size: 1.5ch;
+                }
+
+                h1,
+                h3 {
+                    padding: 2px;
+                    line-height: 1;
+                    width: 100%;
+                }
+            }
+        }
+
+        &--content {
+            flex-grow: 1;
+
+            @media screen and (prefers-color-scheme: dark) {
+                background-color: rgba($color-base, 0.1);
+            }
+
+            @media screen and(prefers-color-scheme: light ) {
+                background-color: rgba(#0080d4, 0.1);
+                color: darken(#0080d4, 10);
+            }
+        }
+
+        &--footer {
+            @media screen and (prefers-color-scheme: dark) {
+                --color: #{rgba($color-base, 0.3)};
+                border-top: 1px solid rgba(white, 0.05);
+            }
+
+            @media screen and (prefers-color-scheme: light) {
+                --color: #{rgba($color-base, 0.1)};
+                border-top: 1px solid rgba($color-base, 0.2);
+                background-color: darken($color-base, 10);
+                color: white;
+            }
+
+            background-color: var(--color);
+            min-height: 40px;
+        }
+    }
+}
+
+.footer {
+    &__inner {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &__info {
+        background-color: darken($color-base, 20);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+// Iconos:
+.icon {
+    --size: 30px;
+
+    border-radius: 4px;
+
+    path {
+        fill: rgba(white, 0.7);
+    }
+
+    &--teclado {
+        --size: 40px;
+
+        display: block;
+        width: var(--size);
+        height: var(--size);
+        padding: 5px;
+        transition: 300ms ease;
+        border: 1px solid rgba(white, 0.1);
+
+        @media screen and (min-width: 600px) {
+            --size: 60px;
+        }
+
+        &:hover {
+            background-color: rgba(white, 0.1);
+        }
+
+        &:focus {
+            background-color: rgba(white, 0.05);
+            border: 1px solid rgba(white, 0.3);
+        }
+
+        &:active {
+            transition: none;
+            background-color: transparent;
+        }
+    }
+}
+
+.autores {
+    --gap: 10px;
+
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 75%;
+
+    background-color: darken($color-secundario, 5);
+    gap: var(--gap);
+
+    @media screen and (max-width: 650px) {
+        flex-wrap: wrap;
+        --gap: 0;
+    }
+
+    &__item {
+        padding: 5px 10px;
+
+        @media screen and (max-width: 650px) {
+            width: 100%;
+
+            &:first-child {
+                background-color: saturate(darken($color-base, 10), 100);
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+
+        }
+    }
+
+    &__enlace {
+        color: white;
+        transition: 300ms ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 1;
+            transition: none;
+        }
+    }
+}
