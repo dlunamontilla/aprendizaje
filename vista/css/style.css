@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 ::-moz-focus-inner {
   border: 0;
 }
@@ -255,16 +256,18 @@ code {
 }
 
 .letra {
-  font-family: times;
+  font-family: 'EB Garamond', serif;
   transition: 300ms ease;
   width: 100%;
   height: auto;
+  min-height: 200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 1;
+  padding-top: 20px;
 }
 @media screen and (max-width: 600px) {
   .letra {
@@ -282,6 +285,9 @@ code {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+}
+.main hr {
+  width: 100%;
 }
 .main__inner {
   flex-shrink: 1;
@@ -331,6 +337,7 @@ code {
 }
 .main__inner--content {
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 @media screen and (prefers-color-scheme: dark) {
   .main__inner--content {
@@ -445,6 +452,38 @@ code {
 .autores__enlace:active {
   opacity: 1;
   transition: none;
+}
+
+.caracter {
+  --gap: 10px;
+  background-color: #a1908c27;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: var(--gap);
+  width: calc(100% - 20px);
+  max-width: 800px;
+  margin: 0 auto;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-gap: var(--gap);
+  gap: var(--gap);
+  transition: 300ms ease;
+}
+.caracter--show {
+  display: grid;
+}
+.caracter__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.caracter__item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (prefers-color-scheme: dark) {

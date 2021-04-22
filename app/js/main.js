@@ -1,7 +1,7 @@
 import Datos from "./modulos/Datos.js";
 import letras from "./modulos/letras.js";
 import { imagenSVG } from "./modulos/imagenSVG.js";
-
+import menu from "./modulos/menu.js";
 
 const datos = new Datos;
 datos.render(() => {
@@ -25,3 +25,5 @@ if (audio) {
         audio.volume = 0.3;
     })
 }
+
+menu("#header-menu, #footer-menu");
