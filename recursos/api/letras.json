@@ -1,39 +1,224 @@
 {
-    "A": { "src": "multimedia/audio/letras/A.mp3", "letra" : "A  a", "class": "resaltar"},
-    "B": { "src": "multimedia/audio/letras/B.mp3", "letra" : "B  b", "class": "resaltar"},
-    "C": { "src": "multimedia/audio/letras/C.mp3", "letra" : "C  c", "class": "resaltar"},
-    "D": { "src": "multimedia/audio/letras/D.mp3", "letra" : "D  d", "class": "resaltar"},
-    "E": { "src": "multimedia/audio/letras/E.mp3", "letra" : "E  e", "class": "resaltar"},
-    "F": { "src": "multimedia/audio/letras/F.mp3", "letra" : "F  f", "class": "resaltar"},
-    "G": { "src": "multimedia/audio/letras/G.mp3", "letra" : "G  g", "class": "resaltar"},
-    "H": { "src": "multimedia/audio/letras/H.mp3", "letra" : "H  h", "class": "resaltar"},
-    "I": { "src": "multimedia/audio/letras/I.mp3", "letra" : "I  i", "class": "resaltar"},
-    "J": { "src": "multimedia/audio/letras/J.mp3", "letra" : "J  j", "class": "resaltar"},
-    "K": { "src": "multimedia/audio/letras/K.mp3", "letra" : "K  k", "class": "resaltar"},
-    "L": { "src": "multimedia/audio/letras/L.mp3", "letra" : "L  l", "class": "resaltar"},
-    "M": { "src": "multimedia/audio/letras/M.mp3", "letra" : "M  m", "class": "resaltar"},
-    "N": { "src": "multimedia/audio/letras/N.mp3", "letra" : "N  n", "class": "resaltar"},
-    "Ñ": { "src": "multimedia/audio/letras/Ñ.mp3", "letra" : "Ñ  ñ", "class": "resaltar"},
-    "O": { "src": "multimedia/audio/letras/O.mp3", "letra" : "O  o", "class": "resaltar"},
-    "P": { "src": "multimedia/audio/letras/P.mp3", "letra" : "P  p", "class": "resaltar"},
-    "Q": { "src": "multimedia/audio/letras/Q.mp3", "letra" : "Q  q", "class": "resaltar"},
-    "R": { "src": "multimedia/audio/letras/R.mp3", "letra" : "R  r", "class": "resaltar"},
-    "S": { "src": "multimedia/audio/letras/S.mp3", "letra" : "S  s", "class": "resaltar"},
-    "T": { "src": "multimedia/audio/letras/T.mp3", "letra" : "T  t", "class": "resaltar"},
-    "U": { "src": "multimedia/audio/letras/U.mp3", "letra" : "U  u", "class": "resaltar"},
-    "V": { "src": "multimedia/audio/letras/V.mp3", "letra" : "V  v", "class": "resaltar"},
-    "W": { "src": "multimedia/audio/letras/W.mp3", "letra" : "W  w", "class": "resaltar"},
-    "X": { "src": "multimedia/audio/letras/X.mp3", "letra" : "X  x", "class": "resaltar"},
-    "Y": { "src": "multimedia/audio/letras/Y.mp3", "letra" : "Y  y", "class": "resaltar"},
-    "Z": { "src": "multimedia/audio/letras/Z.mp3", "letra" : "Z  z", "class": "resaltar"},
-    "1": { "src": "multimedia/audio/numeros/1.mp3", "letra" : "1", "class": "resaltar"},
-    "2": { "src": "multimedia/audio/numeros/2.mp3", "letra" : "2", "class": "resaltar"},
-    "3": { "src": "multimedia/audio/numeros/3.mp3", "letra" : "3", "class": "resaltar"},
-    "4": { "src": "multimedia/audio/numeros/4.mp3", "letra" : "4", "class": "resaltar"},
-    "5": { "src": "multimedia/audio/numeros/5.mp3", "letra" : "5", "class": "resaltar"},
-    "6": { "src": "multimedia/audio/numeros/6.mp3", "letra" : "6", "class": "resaltar"},
-    "7": { "src": "multimedia/audio/numeros/7.mp3", "letra" : "7", "class": "resaltar"},
-    "8": { "src": "multimedia/audio/numeros/8.mp3", "letra" : "8", "class": "resaltar"},
-    "9": { "src": "multimedia/audio/numeros/9.mp3", "letra" : "9", "class": "resaltar"},
-    "0": { "src": "multimedia/audio/numeros/0.mp3", "letra" : "0", "class": "resaltar"}
+  "A": {
+    "src": "multimedia/audio/letras/A.mp3",
+    "letra": "A  a",
+    "class": "resaltar resaltar--naranja",
+    "tipo": "vocal"
+  },
+  "B": {
+    "src": "multimedia/audio/letras/B.mp3",
+    "letra": "B  b",
+    "class": "resaltar resaltar--morado",
+    "tipo": "consonante"
+  },
+  "C": {
+    "src": "multimedia/audio/letras/C.mp3",
+    "letra": "C  c",
+    "class": "resaltar resaltar--verde",
+    "tipo": "consonante"
+  },
+  "D": {
+    "src": "multimedia/audio/letras/D.mp3",
+    "letra": "D  d",
+    "class": "resaltar resaltar--gris",
+    "tipo": "consonante"
+  },
+  "E": {
+    "src": "multimedia/audio/letras/E.mp3",
+    "letra": "E  e",
+    "class": "resaltar resaltar--rojo",
+    "tipo": "vocal"
+  },
+  "F": {
+    "src": "multimedia/audio/letras/F.mp3",
+    "letra": "F  f",
+    "class": "resaltar resaltar--marron",
+    "tipo": "consonante"
+  },
+  "G": {
+    "src": "multimedia/audio/letras/G.mp3",
+    "letra": "G  g",
+    "class": "resaltar resaltar--azul",
+    "tipo": "consonante"
+  },
+  "H": {
+    "src": "multimedia/audio/letras/H.mp3",
+    "letra": "H  h",
+    "class": "resaltar resaltar--naranja",
+    "tipo": "consonante"
+  },
+  "I": {
+    "src": "multimedia/audio/letras/I.mp3",
+    "letra": "I  i",
+    "class": "resaltar resaltar--verde",
+    "tipo": "vocal"
+  },
+  "J": {
+    "src": "multimedia/audio/letras/J.mp3",
+    "letra": "J  j",
+    "class": "resaltar resaltar--verde-turquesa",
+    "tipo": "consonante"
+  },
+  "K": {
+    "src": "multimedia/audio/letras/K.mp3",
+    "letra": "K  k",
+    "class": "resaltar resaltar--verde-oscuro",
+    "tipo": "consonante"
+  },
+  "L": {
+    "src": "multimedia/audio/letras/L.mp3",
+    "letra": "L  l",
+    "class": "resaltar resaltar--azul",
+    "tipo": "consonante"
+  },
+  "M": {
+    "src": "multimedia/audio/letras/M.mp3",
+    "letra": "M  m",
+    "class": "resaltar resaltar--morado"
+    ,"tipo": "consonante"
+  },
+  "N": {
+    "src": "multimedia/audio/letras/N.mp3",
+    "letra": "N  n",
+    "class": "resaltar resaltar--turquesa",
+    "tipo": "consonante"
+  },
+  "Ñ": {
+    "src": "multimedia/audio/letras/Ñ.mp3",
+    "letra": "Ñ  ñ",
+    "class": "resaltar resaltar--rosado",
+    "tipo": "consonante"
+  },
+  "O": {
+    "src": "multimedia/audio/letras/O.mp3",
+    "letra": "O  o",
+    "class": "resaltar resaltar--morado",
+    "tipo": "vocal"
+  },
+  "P": {
+    "src": "multimedia/audio/letras/P.mp3",
+    "letra": "P  p",
+    "class": "resaltar resaltar--azul",
+    "tipo": "consonante"
+  },
+  "Q": {
+    "src": "multimedia/audio/letras/Q.mp3",
+    "letra": "Q  q",
+    "class": "resaltar resaltar--morado",
+    "tipo": "consonante"
+  },
+  "R": {
+    "src": "multimedia/audio/letras/R.mp3",
+    "letra": "R  r",
+    "class": "resaltar resaltar--naranja",
+    "tipo": "consonante"
+  },
+  "S": {
+    "src": "multimedia/audio/letras/S.mp3",
+    "letra": "S  s",
+    "class": "resaltar resaltar--amarillo",
+    "tipo": "consonante"
+  },
+  "T": {
+    "src": "multimedia/audio/letras/T.mp3",
+    "letra": "T  t",
+    "class": "resaltar resaltar--verde",
+    "tipo": "consonante"
+  },
+  "U": {
+    "src": "multimedia/audio/letras/U.mp3",
+    "letra": "U  u",
+    "class": "resaltar resaltar--morado",
+    "tipo": "vocal"
+  },
+  "V": {
+    "src": "multimedia/audio/letras/V.mp3",
+    "letra": "V  v",
+    "class": "resaltar resaltar--rosado",
+    "tipo": "consonante"
+  },
+  "W": {
+    "src": "multimedia/audio/letras/W.mp3",
+    "letra": "W  w",
+    "class": "resaltar resaltar--purpura",
+    "tipo": "consonante"
+  },
+  "X": {
+    "src": "multimedia/audio/letras/X.mp3",
+    "letra": "X  x",
+    "class": "resaltar resaltar--rojo",
+    "tipo": "consonante"
+  },
+  "Y": {
+    "src": "multimedia/audio/letras/Y.mp3",
+    "letra": "Y  y",
+    "class": "resaltar resaltar--marron",
+    "tipo": "consonante"
+  },
+  "Z": {
+    "src": "multimedia/audio/letras/Z.mp3",
+    "letra": "Z  z",
+    "class": "resaltar resaltar--gris",
+    "tipo": "consonante"
+  },
+  "1": {
+    "src": "multimedia/audio/numeros/1.mp3",
+    "letra": "1",
+    "class": "resaltar resaltar--azul",
+    "tipo": "numero"
+  },
+  "2": {
+    "src": "multimedia/audio/numeros/2.mp3",
+    "letra": "2",
+    "class": "resaltar resaltar--naranja",
+    "tipo": "numero"
+  },
+  "3": {
+    "src": "multimedia/audio/numeros/3.mp3",
+    "letra": "3",
+    "class": "resaltar resaltar--morado",
+    "tipo": "numero"
+  },
+  "4": {
+    "src": "multimedia/audio/numeros/4.mp3",
+    "letra": "4",
+    "class": "resaltar resaltar--verde",
+    "tipo": "numero"
+  },
+  "5": {
+    "src": "multimedia/audio/numeros/5.mp3",
+    "letra": "5",
+    "class": "resaltar resaltar--purpura",
+    "tipo": "numero"
+  },
+  "6": {
+    "src": "multimedia/audio/numeros/6.mp3",
+    "letra": "6",
+    "class": "resaltar resaltar--naranja",
+    "tipo": "numero"
+  },
+  "7": {
+    "src": "multimedia/audio/numeros/7.mp3",
+    "letra": "7",
+    "class": "resaltar resaltar--verde-oscuro",
+    "tipo": "numero"
+  },
+  "8": {
+    "src": "multimedia/audio/numeros/8.mp3",
+    "letra": "8",
+    "class": "resaltar resaltar--gris",
+    "tipo": "numero"
+  },
+  "9": {
+    "src": "multimedia/audio/numeros/9.mp3",
+    "letra": "9",
+    "class": "resaltar resaltar--rosado",
+    "tipo": "numero"
+  },
+  "0": {
+    "src": "multimedia/audio/numeros/0.mp3",
+    "letra": "0",
+    "class": "resaltar resaltar--turquesa",
+    "tipo": "numero"
+  }
 }

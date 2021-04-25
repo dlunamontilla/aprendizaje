@@ -1,129 +1,56 @@
-.frontal {
-	--color: #{darken( white, 70 )};
-	color: var(--color);
+.resaltar {
+	--color: var(--color-resaltado);
+    color: var(--color);
+    
+	&--azul {
+        --color-resaltado: blue;
+    }
 
-	&, path {
-		transition: 300ms ease;
-	}
+    &--verde {
+        --color-resaltado: #{darken(green, 10)};
+    }
 
-	path {
-		fill: var(--color);
-	}
+    &--purpura {
+        --color-resaltado: purple;
+    }
 
-	&--base,
-	&--base-hover:hover {
-		--color: #{$color-base};
-	}
+    &--morado {
+        --color-resaltado: #4d006b;
+    }
 
-	&--secundario,
-	&--secundario-hover:hover {
-		--color: #{$color-secundario};
-	}
+    &--verde-turquesa {
+        --color-resaltado: #076161;
+    }
 
-	&--whatsapp,
-	&--whatsapp-hover:hover {
-		--color: #{$color-whatsapp};
+    &--turquesa {
+        --color-resaltado: #0080d4;
+    }
 
-		path {
-			fill: var( --color );
-		}
-	}
+    &--rosado {
+        --color-resaltado: #af00af;
+    }
 
-	&--facebook,
-	&--facebook-hover:hover {
-		--color: #{$color-facebook};
-	}
+    &--naranja {
+        --color-resaltado: #f06600
+    }
 
-	&--instagram,
-	&--instagram-hover:hover {
-		--color: #{$color-instagram};
-	}
+    &--amarillo {
+        --color-resaltado: #f09500;
+    }
 
-	&--twitter,
-	&--twitter-hover:hover {
-		--color: #{$color-twitter};
-	}
+    &--marron {
+        --color-resaltado: brown;
+    }
 
-	&--youtube,
-	&--youtube-hover:hover {
-		--color: #{$color-youtube};
-	}
+    &--gris {
+        --color-resaltado: #414141;
+    }
 
-	&--pinterest,
-	&--pinterest-hover:hover {
-		--color: #{$color-pinterest};
-	}
+    &--verde-oscuro {
+        --color-resaltado: #030;
+    }
 
-	&--linkedin,
-	&--linkedin-hover:hover {
-		--color: #{$color-linkedin};
-	}
-
-	&--skype,
-	&--skype-hover:hover {
-		--color: #{$color-skype};
-	}
-}
-
-.fondo {
-	--color: #{darken( white, 70)};
-
-	transition: 300ms ease;
-	background-color: var(--color);
-	fill: var(--color);
-
-	&--base,
-	&--base-hover:hover {
-		--color: #{$color-base};
-	}
-
-	&--secundario,
-	&--secundario-hover:hover {
-		--color: #{$color-secundario};
-	}
-
-	&--whatsapp,
-	&--whatsapp-hover:hover {
-		--color: #{$color-whatsapp};
-	}
-
-	&--facebook,
-	&--facebook-hover:hover {
-		--color: #{$color-facebook};
-	}
-
-	&--instagram,
-	&--instagram-hover:hover {
-		--color: #{$color-instagram};
-	}
-
-	&--twitter,
-	&--twitter-hover:hover {
-		--color: #{$color-twitter};
-	}
-
-	&--youtube,
-	&--youtube-hover:hover {
-		--color: #{$color-youtube};
-	}
-
-	&--pinterest,
-	&--pinterest-hover:hover {
-		--color: #{$color-pinterest};
-	}
-
-	&--linkedin,
-	&--linkedin-hover:hover {
-		--color: #{$color-linkedin};
-	}
-
-	&--skype,
-	&--skype-hover:hover {
-		--color: #{$color-skype};
-	}
-
-	&--blanco,
-	&--blanco-hover:hover {
-		--color: white;
+	&--rojo {
+		--color-resaltado: #f00000;
 	}
 }

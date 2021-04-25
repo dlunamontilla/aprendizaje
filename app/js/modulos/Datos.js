@@ -11,7 +11,7 @@ class Datos {
             return content.replace(/([\{\}])/g, "").trim();
         }
 
-        this.app = document.querySelector("#app");
+        this.app = document.querySelector(selector);
 
         // Contenido de prueba
         this.variables = {}

@@ -1,8 +1,8 @@
 import crearAudio from "./crearAudio.js";
+import escuchar from "./escuchar.js";
 
 const letras = (selector) => {
     const _letras = fetch("recursos/api/letras.json");
-    const audios = [];
 
     _letras.then(response => response.json())
         .then(data => {
@@ -52,42 +52,7 @@ const letras = (selector) => {
                 });
                 
             });
-
-            const claves = Object.keys(data);
-            let num = 0;
-            addEventListener("click", () => {
-                escuchar(claves[num], _letras, {
-                    elemento: letra,
-                    data: data
-                });
-
-                num++;
-
-                if (num >= claves.length) num = 0;
-
-                if ( audio && audio.paused ) audio.play();
-            });
-
-            addEventListener("dblclick", function() {
-                if ( audio && audio.paused ) audio.play();
-            })
-        })
-
-    const escuchar = (caracter, alfabeto, parametros) => {
-        const { elemento, data } = parametros;
-
-        if ( caracter == "ENTER" || caracter == "BACKSPACE" && elemento ) {
-            elemento.textContent = "";
-        }
-
-            
-        if (!alfabeto[caracter])
-            return;
-
-        alfabeto[caracter].play();
-        if (elemento)
-            elemento.innerHTML = `<span class="${data[caracter].class}">${data[caracter].letra}</span>`;
-    }
+        });
 }
 
 export default letras;

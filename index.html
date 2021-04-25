@@ -11,8 +11,8 @@
    <meta property="og:type" content="website">
 
    <!-- Favicon -->
-   <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-   <link type="image/png" href="favicon.png" rel="icon">
+   <link type="image/x-icon" href="multimedia/favicon/favicon.ico" rel="shortcut icon">
+   <link type="image/png" href="multimedia/favicon/favicon.png" rel="icon">
 
    <!-- Fuentes tipográficas -->
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -28,49 +28,47 @@
 
       <header class="header main__inner main__inner--header">
          <div class="header__item">
-            <h1>{{ title }}</h1>
-            <h3>{{ indicaciones }}</h3>
-         </div>
+            <div class="logo">
+               <div class="logo__item logo__item--image">
+                  <a data-src="{{ logo }}" href="./"></a>
+               </div>
 
-         <div class="header__item">
-            <a class="icon icon--teclado" id="header-menu" data-src="{{ teclado }}" href="#caracteres">Teclado</a>
+               <div class="logo__item">
+                  <h1>{{ title }}</h1>
+                  <h3>{{ indicaciones }}</h3>
+               </div>
+
+            </div>
          </div>
       </header>
 
       <div class="main__inner main__inner--content">
-         <div class="letra" id="letra"></div>
+         <div class="presentar">
+            <div class="presentar__inner presentar__inner--contenido">
+               <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
+               <div class="letra" id="letra"></div>
+            </div>
 
-         <div class="caracter" id="caracteres">
-            <div class="caracter__item">A</div>
-            <div class="caracter__item">B</div>
-            <div class="caracter__item">C</div>
-            <div class="caracter__item">D</div>
-            <div class="caracter__item">E</div>
-            <div class="caracter__item">F</div>
-            <div class="caracter__item">G</div>
-            <div class="caracter__item">H</div>
-            <div class="caracter__item">I</div>
-            <div class="caracter__item">J</div>
-            <div class="caracter__item">L</div>
-            <div class="caracter__item">M</div>
-            <div class="caracter__item">N</div>
-            <div class="caracter__item">Ñ</div>
-            <div class="caracter__item">O</div>
-            <div class="caracter__item">P</div>
-            <div class="caracter__item">Q</div>
-            <div class="caracter__item">R</div>
-            <div class="caracter__item">S</div>
-            <div class="caracter__item">T</div>
+            <!-- Panel de teclados -->
+            <div class="presentar__inner presentar__inner--panel">
+               <div class="opciones">
+                  <div class="opciones__item opciones__item--pestannas">
+                     <div class="pestannas" id="pestannas">
+                        <button class="pestannas__button" data-tipo="vocal">Vocales</button>
+                        <button class="pestannas__button" data-tipo="consonante">Consonantes</button>
+                        <button class="pestannas__button" data-tipo="numero">Números</button>
+                     </div>
+                  </div>
+                  <div class="opciones__item opciones__item--teclado" id="teclado"></div>
+               </div>
+            </div>
          </div>
       </div>
 
       <footer class="footer main__inner main__inner--footer">
          <div class="footer__inner">
-            <div class="footer__info">
-               <div class="icon icon--teclado">
-                  <a class="icon__enlace" id="footer-menu" data-src="{{ teclado }}" href="#caracteres"></a>
-               </div>
-            </div>
+            <!-- Aquí es donde se colocará información -->
+            <div class="footer__info"></div>
 
             <div class="autores">
                <div class="autores__item">
@@ -78,7 +76,7 @@
                </div>
 
                <div class="autores__item">
-                  Música - Snooter - <a class="autores__enlace" href="https://joshwoodward.com/" title="Josh Woodward" target="_blank">Josh Woodward</a>
+                  Música - Crazy Glue - <a class="autores__enlace" href="https://joshwoodward.com/" title="Josh Woodward" target="_blank">Josh Woodward</a>
                </div>
             </div>
          </div>
