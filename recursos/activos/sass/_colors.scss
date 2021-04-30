@@ -3,11 +3,11 @@
     color: var(--color);
     
 	&--azul {
-        --color-resaltado: blue;
+        --color-resaltado: #{lighten(blue, 20)};
     }
 
     &--verde {
-        --color-resaltado: #{darken(green, 10)};
+        --color-resaltado: #{green};
     }
 
     &--purpura {
@@ -15,7 +15,7 @@
     }
 
     &--morado {
-        --color-resaltado: #4d006b;
+        --color-resaltado: #6b0096;
     }
 
     &--verde-turquesa {
@@ -53,4 +53,16 @@
 	&--rojo {
 		--color-resaltado: #f00000;
 	}
+
+    &--verde-brillante {
+        --color-resaltado: #00c000;
+    }
+
+    &--verde-turquesa-claro {
+        --color-resaltado: #{lighten(#076161, 10)};
+    }
+
+    &--plateado {
+        --color-resaltado: #{darken(silver, 10)};
+    }
 }

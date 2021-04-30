@@ -53,7 +53,6 @@ const pintarTeclado = (objeto) => {
     });
 
     target.appendChild(contenedorTecla);
-
     console.log( target );
 }
 

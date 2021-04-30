@@ -2,9 +2,9 @@
 import Datos from "./modulos/Datos.js";
 import letras from "./modulos/letras.js";
 import { imagenSVG } from "./modulos/imagenSVG.js";
-import menu from "./modulos/menu.js";
 import obtenerDatos from "./modulos/obtenerDatos.js";
 import { elemento } from "./modulos/elementos.js";
+import seleccionarPestanna from "./modulos/seleccionarPestana.js";
 
 const datos = new Datos;
 datos.render(() => {
@@ -31,30 +31,37 @@ if (audio) {
     })
 }
 
-menu("#header-menu, #footer-menu");
+// Obtener el tipo de teclado en localStorage:
+const tipoTeclado = localStorage.getItem("tipo");
 
-// Cargar teclado predeterminado:
-obtenerDatos({
+// Parametros:
+const parametros = {
     url: "recursos/api/letras.json",
     selector: "#teclado",
-    tipo: "numero"
-});
+    tipo: tipoTeclado ? tipoTeclado : "numero"
+};
+
+// Cargar teclado predeterminado:
+obtenerDatos(parametros);
 
 
 // Preparación de las pestañas:
 const tabButton = elemento("#pestannas");
+const buttons = tabButton.querySelectorAll("button");
+
+seleccionarPestanna(buttons, parametros.tipo);
 
 if (tabButton) {
     tabButton.onclick = (e) => {
         const {tipo} = e.target.dataset;
-
+        
         if ( tipo ) {
-            obtenerDatos({
-                url: "recursos/api/letras.json",
-                selector: "#teclado",
-                tipo
-            });
+            parametros.tipo = tipo;
+            obtenerDatos(parametros);
+            localStorage.setItem("tipo", tipo);
         }
+        
+        seleccionarPestanna(buttons, parametros.tipo);
     }
 
 }

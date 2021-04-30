@@ -10,12 +10,17 @@
    <meta property="og:title" content="Conozca el sonido de las letras en español">
    <meta property="og:type" content="website">
 
+   <!-- Manifest -->
+   <link rel="manifest" href="manifest.json">
+
    <!-- Favicon -->
    <link type="image/x-icon" href="multimedia/favicon/favicon.ico" rel="shortcut icon">
    <link type="image/png" href="multimedia/favicon/favicon.png" rel="icon">
 
    <!-- Fuentes tipográficas -->
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
 
    <!-- Estilos -->
    <link href="vista/css/normalize.css" rel="stylesheet">
@@ -42,11 +47,37 @@
          </div>
       </header>
 
-      <div class="main__inner main__inner--content">
-         <div class="presentar">
+      <div class="content main__inner main__inner--content">
+         <!-- Menú de juegos -->
+         <div class="content__inner">
+            <h3>Seleccione un juego de aprendizaje</h3>
+
+            <hr>
+
+            <p>El objetivo de esta aplicación Web es enseñar el sonido de las letras y su pronunciación, pero de una
+               forma entretenida. Se escuchará una voz por cada letra o número presionado.</p>
+            <div class="content__inner juegos">
+               <a href="#presentar-letras" class="juegos__item juegos__item--text">
+                  <span data-src="multimedia/icons/music.svg"></span>
+                  <span>Presiona aquí para escuchar</span>
+               </a>
+            </div>
+
+
+            <!-- <p>Cada etapa de aprendizaje se considerará un juego diferente. El objeto de ser visto como un juego es lograr que el proceso de aprendizaje sea entretenido.</p> -->
+
+         </div>
+
+
+         <!-- Juegos -->
+         <div class="presentar" id="presentar-letras">
             <div class="presentar__inner presentar__inner--contenido">
                <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
                <div class="letra" id="letra"></div>
+
+               <div class="salir" id="salir">
+                  <a href="#"></a>
+               </div>
             </div>
 
             <!-- Panel de teclados -->
@@ -68,15 +99,18 @@
       <footer class="footer main__inner main__inner--footer">
          <div class="footer__inner">
             <!-- Aquí es donde se colocará información -->
-            <div class="footer__info"></div>
+            <div class="footer__info">
+               zdsfzsd
+            </div>
 
             <div class="autores">
                <div class="autores__item">
                   (c) 2021 - {{ autor }} | Aprendizaje
                </div>
 
-               <div class="autores__item">
-                  Música - Crazy Glue - <a class="autores__enlace" href="https://joshwoodward.com/" title="Josh Woodward" target="_blank">Josh Woodward</a>
+               <div class="autores__item" id="btnAdd">
+                  Música - Crazy Glue - <a class="autores__enlace" href="https://joshwoodward.com/"
+                     title="Josh Woodward" target="_blank">Josh Woodward</a>
                </div>
             </div>
          </div>
@@ -87,6 +121,9 @@
 
    <!-- JavaScript -->
    <script src="app/js/main.js" type="module"></script>
+
+   <!-- Probar código -->
+   <script src="app/js/serviceWorkers.js"></script>
 </body>
 
 </html>

@@ -5,3 +5,4 @@ Herramientas
 *.sql
 upload
 uploads
+node_modules

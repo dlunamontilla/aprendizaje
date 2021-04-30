@@ -1,11 +1,5 @@
 .resaltar {
-    @media screen and (prefers-color-scheme: dark) {
-        animation: 300ms ease resaltar-nocturno 3 alternate;
-    }
-    
-    @media screen and (prefers-color-scheme: light) {
-        animation: 300ms ease resaltar-claro 3 alternate;
-    }
+    animation: 300ms ease resaltar alternate 3;
 }
 
 @keyframes resaltar-nocturno {
@@ -20,3 +14,17 @@
         color: lighten($color-base, 8);
     }
 }
+
+@keyframes resaltar {
+    from {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: scale(0.95) rotateX(-10deg);
+    }
+}
+
