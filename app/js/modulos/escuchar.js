@@ -12,7 +12,7 @@ const escuchar = (caracter, alfabeto, parametros) => {
     alfabeto[caracter].play();
 
     if (elemento) {
-        elemento.innerHTML = `<span class="${data[caracter].class}">${data[caracter].letra}</span>`;
+        elemento.innerHTML = `<span class="${data[caracter].className}">${data[caracter].letra}</span>`;
     }
 }
 

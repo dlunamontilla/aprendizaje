@@ -1,12 +1,24 @@
-const teclado = (selector) => {
-    const caracterContainer = document.querySelector(selector);
+import Escuchar from "./EscucharAudio.js";
 
-    console.clear();
-    console.log( caracterContainer);
+const teclado = (parametros) => {
 
-    console.log( "Datos =>", selector );
-    if ( caracterContainer )
-        caracterContainer.classList.toggle("caracter--show");
+    const {
+        selector, data
+    } = parametros;
+
+    const tecladoContenedor = document.querySelector(selector);
+
+    if ( tecladoContenedor )
+        tecladoContenedor.classList.toggle("caracter--show");
+
+    tecladoContenedor.addEventListener("click", e => {
+        const {simbolo} = e.target.dataset;
+        const {audio = null} = data[simbolo];
+
+        if ( data[simbolo] ) {
+            audio.play();
+        }
+    });
 };
 
 export default teclado;

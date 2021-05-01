@@ -11,9 +11,9 @@ const obtenerDatos = (parametros) => {
             for (let letra in data) {
                 elementos.push({
                     letra,
-                    src: data[letra].src,
+                    audio: data[letra].audio,
                     letras: data[letra].letra,
-                    clase: data[letra].class,
+                    clase: data[letra].className,
                     tipo: data[letra].tipo
                 });
             }
@@ -49,7 +49,7 @@ const pintarTeclado = (objeto) => {
     
     teclas.forEach(tecla => {
         if (tecla.tipo == tipo)
-            contenedorTecla.innerHTML += `<button class="teclas__item ${tecla.clase}" data-src=""><span>${tecla.letra}</span></button>`;
+            contenedorTecla.innerHTML += `<button class="teclas__item ${tecla.clase}" data-simbolo="${tecla.letra}"><span>${tecla.letra}</span></button>`;
     });
 
     target.appendChild(contenedorTecla);

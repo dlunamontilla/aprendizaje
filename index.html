@@ -74,7 +74,6 @@
             <div class="presentar__inner presentar__inner--contenido">
                <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
                <div class="letra" id="letra"></div>
-
                <div class="salir" id="salir">
                   <a href="#"></a>
                </div>
@@ -85,9 +84,9 @@
                <div class="opciones">
                   <div class="opciones__item opciones__item--pestannas">
                      <div class="pestannas" id="pestannas">
-                        <button class="pestannas__button" data-tipo="vocal">Vocales</button>
-                        <button class="pestannas__button" data-tipo="consonante">Consonantes</button>
-                        <button class="pestannas__button" data-tipo="numero">Números</button>
+                        <button class="pestannas__button" data-tipo="vocal" data-sonido="multimedia/audio/menu/vocales.mp3">Vocales</button>
+                        <button class="pestannas__button" data-tipo="consonante" data-sonido="multimedia/audio/menu/consonantes.mp3">Consonantes</button>
+                        <button class="pestannas__button" data-tipo="numero" data-sonido="multimedia/audio/menu/numeros.mp3">Números</button>
                      </div>
                   </div>
                   <div class="opciones__item opciones__item--teclado" id="teclado"></div>
@@ -117,6 +116,20 @@
 
 
       </footer>
+
+      <!-- Avisos enviados al usuario -->
+      <div id="loading" class="loading">
+         <div class="loading__mensaje">
+            <div class="caja giro-constante size">
+               <svg viewBox="0 0 140 140" class="lienzo giro-intervalo size">
+                  <!-- Circunferencia con borde animado -->
+                  <circle class="cir cir--completando giro-trazo" cx="70" cy="70" r="65" />
+               </svg>
+            </div>
+
+            <span id="aviso">Cargando audio</span>
+         </div>
+      </div>
    </main>
 
    <!-- JavaScript -->

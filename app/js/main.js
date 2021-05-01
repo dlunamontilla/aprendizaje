@@ -5,6 +5,10 @@ import { imagenSVG } from "./modulos/imagenSVG.js";
 import obtenerDatos from "./modulos/obtenerDatos.js";
 import { elemento } from "./modulos/elementos.js";
 import seleccionarPestanna from "./modulos/seleccionarPestana.js";
+import Escuchar from "./modulos/EscucharAudio.js";
+import teclado from "./modulos/teclado.js";
+import pestannas from "./modulos/pestannas.js";
+
 
 const datos = new Datos;
 datos.render(() => {
@@ -65,3 +69,19 @@ if (tabButton) {
     }
 
 }
+
+// Instanciamos la clase, pero aún no la usamos:
+const escucharAudio = new Escuchar("recursos/api/letras.json");
+
+// Probar clase:
+
+escucharAudio.init("#loading", data => {
+    teclado({
+        selector: "#teclado",
+        data
+    });
+    
+});
+
+
+pestannas();

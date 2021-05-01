@@ -18,7 +18,7 @@ const letras = (selector) => {
             if (!letra) return;
 
             for (let letra in data) {
-                const src = data[letra].src;
+                const src = data[letra].audio;
                 _letras[letra] = crearAudio(src);
             }
 
