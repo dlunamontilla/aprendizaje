@@ -10,6 +10,9 @@ import modal from "./modal.js";
 const jugar = (parametros) => {
     const {selectorJuego, selectorModal, path} = parametros;
 
+    // loading:
+    const loading = document.querySelector("#loading");
+
     // Captura de elementos del juego:
     const ventanaModal = document.querySelector(selectorModal);
     const juegos = document.querySelector(selectorJuego);
@@ -24,6 +27,11 @@ const jugar = (parametros) => {
         const enlace = e.target;
 
         localStorage.setItem("origen", "home");
+
+        // Iniciar la animación de carga:
+        if (loading) {
+            loading.classList.remove("none");
+        }
 
         // Instanciamos la clase, pero aún no la usamos:
         const escucharAudio = new Escuchar(path);

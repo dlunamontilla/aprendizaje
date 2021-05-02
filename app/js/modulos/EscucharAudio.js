@@ -66,8 +66,6 @@ class Escuchar {
 
             if (!loading) return;
 
-            loading.classList.remove("none");
-
             // Cuando se carguen todos los audio quitará
             // la animación de carga:
             Promise.all(audios).then(() => {
