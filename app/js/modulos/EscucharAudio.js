@@ -32,7 +32,7 @@ class Escuchar {
             const promesas = [];
 
             for (let simbolo in datos) {
-                const promesa = new Promise((resuelta, rechazada) => {
+                const promesaAudio = new Promise(async (resuelta, rechazada) => {
                     const _audio = audio.cloneNode(true);
                     _audio.setAttribute("src", datos[simbolo].audio);
 
@@ -40,10 +40,13 @@ class Escuchar {
                     // el elemento audio con su ruta:
                     datos[simbolo].audio = _audio;
 
+                    const svg = await fetch(datos[simbolo].simbolo);
+                    datos[simbolo]["simbolo"] = await svg.text();
+
                     return resuelta(_audio)
                 });
 
-                promesas.push(promesa);
+                promesas.push(promesaAudio);
             }
 
             return promesas;
@@ -60,6 +63,10 @@ class Escuchar {
             // Animación de carga:
             const audios = this.audios(datos);
             const loading = document.querySelector(selector);
+
+            if (!loading) return;
+
+            loading.classList.remove("none");
 
             // Cuando se carguen todos los audio quitará
             // la animación de carga:

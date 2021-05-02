@@ -1,3 +1,4 @@
+
 const elementos = ( _selector ) => {
   return document.querySelectorAll( _selector );
 };

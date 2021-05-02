@@ -10,7 +10,7 @@
     "audio": "multimedia/audio/letras/B.mp3",
     "letra": "B  b",
     "simbolo": "multimedia/vector/simbolos/letras/B.svg",
-    "className": "resaltar resaltar--morado",
+    "className": "resaltar resaltar--amarillo",
     "tipo": "consonante"
   },
   "C": {
@@ -38,7 +38,7 @@
     "audio": "multimedia/audio/letras/F.mp3",
     "letra": "F  f",
     "simbolo": "multimedia/vector/simbolos/letras/F.svg",
-    "className": "resaltar resaltar--marron",
+    "className": "resaltar resaltar--rojo",
     "tipo": "consonante"
   },
   "G": {
@@ -59,7 +59,7 @@
     "audio": "multimedia/audio/letras/I.mp3",
     "letra": "I  i",
     "simbolo": "multimedia/vector/simbolos/letras/I.svg",
-    "className": "resaltar resaltar--verde",
+    "className": "resaltar resaltar--verde-brillante",
     "tipo": "vocal"
   },
   "J": {
@@ -80,14 +80,14 @@
     "audio": "multimedia/audio/letras/L.mp3",
     "letra": "L  l",
     "simbolo": "multimedia/vector/simbolos/letras/L.svg",
-    "className": "resaltar resaltar--azul",
+    "className": "resaltar resaltar--amarillo",
     "tipo": "consonante"
   },
   "M": {
     "audio": "multimedia/audio/letras/M.mp3",
     "letra": "M  m",
     "simbolo": "multimedia/vector/simbolos/letras/M.svg",
-    "className": "resaltar resaltar--morado"
+    "className": "resaltar resaltar--verde-brillante"
     ,"tipo": "consonante"
   },
   "N": {
@@ -108,7 +108,7 @@
     "audio": "multimedia/audio/letras/O.mp3",
     "letra": "O  o",
     "simbolo": "multimedia/vector/simbolos/letras/O.svg",
-    "className": "resaltar resaltar--verde",
+    "className": "resaltar resaltar--naranja",
     "tipo": "vocal"
   },
   "P": {
@@ -122,7 +122,7 @@
     "audio": "multimedia/audio/letras/Q.mp3",
     "letra": "Q  q",
     "simbolo": "multimedia/vector/simbolos/letras/Q.svg",
-    "className": "resaltar resaltar--morado",
+    "className": "resaltar resaltar--amarillo",
     "tipo": "consonante"
   },
   "R": {
@@ -150,7 +150,7 @@
     "audio": "multimedia/audio/letras/U.mp3",
     "letra": "U  u",
     "simbolo": "multimedia/vector/simbolos/letras/U.svg",
-    "className": "resaltar resaltar--morado",
+    "className": "resaltar resaltar--violeta",
     "tipo": "vocal"
   },
   "V": {
@@ -164,7 +164,7 @@
     "audio": "multimedia/audio/letras/W.mp3",
     "letra": "W  w",
     "simbolo": "multimedia/vector/simbolos/letras/W.svg",
-    "className": "resaltar resaltar--purpura",
+    "className": "resaltar resaltar--violeta",
     "tipo": "consonante"
   },
   "X": {
@@ -178,7 +178,7 @@
     "audio": "multimedia/audio/letras/Y.mp3",
     "letra": "Y  y",
     "simbolo": "multimedia/vector/simbolos/letras/Y.svg",
-    "className": "resaltar resaltar--marron",
+    "className": "resaltar resaltar--naranja",
     "tipo": "consonante"
   },
   "Z": {
@@ -220,7 +220,7 @@
     "audio": "multimedia/audio/numeros/5.mp3",
     "letra": "5",
     "simbolo": "multimedia/vector/simbolos/numeros/5.svg",
-    "className": "resaltar resaltar--purpura",
+    "className": "resaltar resaltar--violeta",
     "tipo": "numero"
   },
   "6": {
@@ -261,7 +261,7 @@
 
   "10": {
     "audio": "multimedia/audio/numeros/10.mp3",
-    "letra": "0",
+    "letra": "10",
     "simbolo": "multimedia/vector/simbolos/numeros/10.svg",
     "className": "resaltar resaltar--turquesa",
     "tipo": "numero"
@@ -269,7 +269,7 @@
 
   "20": {
     "audio": "multimedia/audio/numeros/20.mp3",
-    "letra": "0",
+    "letra": "20",
     "simbolo": "multimedia/vector/simbolos/numeros/20.svg",
     "className": "resaltar resaltar--amarillo",
     "tipo": "numero"
@@ -277,7 +277,7 @@
 
   "30": {
     "audio": "multimedia/audio/numeros/30.mp3",
-    "letra": "0",
+    "letra": "30",
     "simbolo": "multimedia/vector/simbolos/numeros/30.svg",
     "className": "resaltar resaltar--naranja",
     "tipo": "numero"
@@ -285,7 +285,7 @@
 
   "40": {
     "audio": "multimedia/audio/numeros/40.mp3",
-    "letra": "0",
+    "letra": "40",
     "simbolo": "multimedia/vector/simbolos/numeros/40.svg",
     "className": "resaltar resaltar--verde-brillante",
     "tipo": "numero"
@@ -293,7 +293,7 @@
 
   "50": {
     "audio": "multimedia/audio/numeros/50.mp3",
-    "letra": "0",
+    "letra": "50",
     "simbolo": "multimedia/vector/simbolos/numeros/50.svg",
     "className": "resaltar resaltar--amarillo",
     "tipo": "numero"
@@ -301,7 +301,7 @@
 
   "60": {
     "audio": "multimedia/audio/numeros/60.mp3",
-    "letra": "0",
+    "letra": "60",
     "simbolo": "multimedia/vector/simbolos/numeros/60.svg",
     "className": "resaltar resaltar--verde",
     "tipo": "numero"
@@ -309,7 +309,7 @@
 
   "70": {
     "audio": "multimedia/audio/numeros/70.mp3",
-    "letra": "0",
+    "letra": "70",
     "simbolo": "multimedia/vector/simbolos/numeros/70.svg",
     "className": "resaltar resaltar--azul",
     "tipo": "numero"
@@ -317,7 +317,7 @@
 
   "80": {
     "audio": "multimedia/audio/numeros/80.mp3",
-    "letra": "0",
+    "letra": "80",
     "simbolo": "multimedia/vector/simbolos/numeros/80.svg",
     "className": "resaltar resaltar--morado",
     "tipo": "numero"
@@ -325,7 +325,7 @@
 
   "90": {
     "audio": "multimedia/audio/numeros/90.mp3",
-    "letra": "0",
+    "letra": "90",
     "simbolo": "multimedia/vector/simbolos/numeros/90.svg",
     "className": "resaltar resaltar--naranja",
     "tipo": "numero"
@@ -333,7 +333,7 @@
 
   "100": {
     "audio": "multimedia/audio/numeros/100.mp3",
-    "letra": "0",
+    "letra": "100",
     "simbolo": "multimedia/vector/simbolos/numeros/100.svg",
     "className": "resaltar resaltar--verde",
     "tipo": "numero"

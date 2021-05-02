@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <title>Conozca el sonido de las letras en español</title>
 
    <!-- Protocolo OpenGraph -->
@@ -11,16 +11,14 @@
    <meta property="og:type" content="website">
 
    <!-- Manifest -->
-   <link rel="manifest" href="manifest.json">
+   <link href="manifest.json" rel="manifest">
 
    <!-- Favicon -->
-   <link type="image/x-icon" href="multimedia/favicon/favicon.ico" rel="shortcut icon">
-   <link type="image/png" href="multimedia/favicon/favicon.png" rel="icon">
+   <link type="image/x-icon" href="favicon.ico?v1" rel="shortcut icon">
+   <link type="image/png" href="favicon.png?v1" rel="icon">
 
    <!-- Fuentes tipográficas -->
-   <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
    <!-- Estilos -->
    <link href="vista/css/normalize.css" rel="stylesheet">
@@ -29,13 +27,11 @@
 
 <body>
    <main class="main" id="app">
-      <audio id="audio" src="{{ musica }}" loop="1"></audio>
-
       <header class="header main__inner main__inner--header">
          <div class="header__item">
             <div class="logo">
                <div class="logo__item logo__item--image">
-                  <a data-src="{{ logo }}" href="./"></a>
+                  <a class="logo__enlace" data-src="{{ logo }}" href="./"></a>
                </div>
 
                <div class="logo__item">
@@ -47,17 +43,21 @@
          </div>
       </header>
 
-      <div class="content main__inner main__inner--content">
+      <div class="content ubuntu-font main__inner main__inner--content">
          <!-- Menú de juegos -->
          <div class="content__inner">
             <h3>Seleccione un juego de aprendizaje</h3>
 
             <hr>
 
-            <p>El objetivo de esta aplicación Web es enseñar el sonido de las letras y su pronunciación, pero de una
-               forma entretenida. Se escuchará una voz por cada letra o número presionado.</p>
+            <p>Esta aplicación será un programa de aprendizaje completo en el futuro, pero entretenida. Sin embargo, en
+               esta primera versión se incluye, por ahora, la enseñaza de letras y números mediante su pronunciación.
+               Solo debe tocar (o hacer clic) sobre la letra que desea escuchar. </p>
+
+            <h3>Seleccione un juego</h3>
             <div class="content__inner juegos">
-               <a href="#presentar-letras" class="juegos__item juegos__item--text">
+               <a class="juegos__item juegos__item--text" data-juego="Letras y números" href="#">
+                  <h3>Letras y números</h3>
                   <span data-src="multimedia/icons/music.svg"></span>
                   <span>Presiona aquí para escuchar</span>
                </a>
@@ -70,10 +70,14 @@
 
 
          <!-- Juegos -->
-         <div class="presentar" id="presentar-letras">
+         <div class="presentar" id="presentar-simbolos">
             <div class="presentar__inner presentar__inner--contenido">
                <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
-               <div class="letra" id="letra"></div>
+
+               <div class="simbolo" id="letra">
+                  <div class="flecha"></div>
+               </div>
+
                <div class="salir" id="salir">
                   <a href="#"></a>
                </div>
@@ -84,9 +88,9 @@
                <div class="opciones">
                   <div class="opciones__item opciones__item--pestannas">
                      <div class="pestannas" id="pestannas">
-                        <button class="pestannas__button" data-tipo="vocal" data-sonido="multimedia/audio/menu/vocales.mp3">Vocales</button>
-                        <button class="pestannas__button" data-tipo="consonante" data-sonido="multimedia/audio/menu/consonantes.mp3">Consonantes</button>
-                        <button class="pestannas__button" data-tipo="numero" data-sonido="multimedia/audio/menu/numeros.mp3">Números</button>
+                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/vocales.mp3" data-tipo="vocal">Vocales</button>
+                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/consonantes.mp3" data-tipo="consonante">Consonantes</button>
+                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/numeros.mp3" data-tipo="numero">Números</button>
                      </div>
                   </div>
                   <div class="opciones__item opciones__item--teclado" id="teclado"></div>
@@ -95,35 +99,63 @@
          </div>
       </div>
 
-      <footer class="footer main__inner main__inner--footer">
+      <footer class="footer alata">
          <div class="footer__inner">
-            <!-- Aquí es donde se colocará información -->
-            <div class="footer__info">
-               zdsfzsd
+            <div class="footer__left">
+               <div class="logo logo--footer">
+                  <a class="logo__enlace" href="./#">
+                     <img src="multimedia/icons/logo-footer.svg" alt="Logotipo">
+                  </a>
+               </div>
             </div>
 
-            <div class="autores">
-               <div class="autores__item">
-                  (c) 2021 - {{ autor }} | Aprendizaje
-               </div>
+            <div class="footer__right">
+               <nav class="footer__nav">
+                  <ul class="menu menu--media">
+                     <li class="menu__item">
+                        <a class="menu__enlace menu__enlace--media" href="https://es.stackoverflow.com/users/67242/david-e-luna-m?tab=profile" target="_blank">
+                           <img src="multimedia/icons/stackoverflow.svg" title="Perfil en Stack Overflow" alt="Stack Overflow">
+                        </a>
+                     </li>
 
-               <div class="autores__item" id="btnAdd">
-                  Música - Crazy Glue - <a class="autores__enlace" href="https://joshwoodward.com/"
-                     title="Josh Woodward" target="_blank">Josh Woodward</a>
+                     <li class="menu__item">
+                        <a class="menu__enlace menu__enlace--media" href="https://twitter.com/dlunamontilla" target="_blank">
+                           <img src="multimedia/icons/twitter.svg" title="Perfil en Twitter" alt="Twitter">
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__enlace menu__enlace--media" href="https://github.com/dlunamontilla/" target="_blank">
+                           <img src="multimedia/icons/github.svg" title="Perfil en GitHub" alt="GitHub">
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__enlace menu__enlace--media" href="https://codepen.io/dlunamontilla/" target="_blank">
+                           <img src="multimedia/icons/codepen.svg" title="Perfil en CodePen" alt="CodePen">
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <div class="autor">
+                  © 2021 - David E Luna M.
                </div>
             </div>
          </div>
 
-
+         <div class="attribution">
+            Music - <strong>"Crazy Glue"</strong> by <a href="https://joshwoodward.com/" title="Free download: http://joshwoodward.com/ " target="_blank">Josh Woodward</a>.
+         </div>
       </footer>
 
       <!-- Avisos enviados al usuario -->
-      <div id="loading" class="loading">
+      <div class="loading none" id="loading">
          <div class="loading__mensaje">
             <div class="caja giro-constante size">
-               <svg viewBox="0 0 140 140" class="lienzo giro-intervalo size">
+               <svg class="lienzo giro-intervalo size" viewBox="0 0 140 140">
                   <!-- Circunferencia con borde animado -->
-                  <circle class="cir cir--completando giro-trazo" cx="70" cy="70" r="65" />
+                  <circle class="cir cir--completando giro-trazo" cx="70" cy="70" r="65"></circle>
                </svg>
             </div>
 
@@ -134,9 +166,6 @@
 
    <!-- JavaScript -->
    <script src="app/js/main.js" type="module"></script>
-
-   <!-- Probar código -->
-   <script src="app/js/serviceWorkers.js"></script>
 </body>
 
 </html>

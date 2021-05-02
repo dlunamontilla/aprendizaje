@@ -17,7 +17,7 @@ $min-height: 100vh !default;
 }
 
 :root {
-   font-family: "Roboto", sans-serif;
+   font-family: 'Alata', sans-serif;
 }
 
 html,
@@ -25,6 +25,7 @@ body {
    margin: 0;
    padding: 0;
    transition: 300ms ease;
+   scroll-behavior: smooth;
 }
 
 body {

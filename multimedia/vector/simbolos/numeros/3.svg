@@ -1,55 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 20.043096 34.418484"
-   version="1.1"
    id="numero3"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="3.svg">
+   version="1.1"
+   viewBox="0 0 20.043096 34.418484">
   <defs
      id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.80355363"
-     inkscape:cx="147.69677"
-     inkscape:cy="38.433329"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1440"
-     inkscape:window-height="828"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:snap-grids="true"
-     inkscape:snap-bbox="true"
-     inkscape:bbox-paths="true"
-     inkscape:snap-bbox-edge-midpoints="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid150"
-       originx="-46.202408"
-       originy="-18.137502" />
-  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -63,20 +23,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Capa 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-93.430962,-119.92959)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.52467346px;line-height:1.25;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
-       x="90.854729"
-       y="152.39014"
-       id="text12"><tspan
-         sodipodi:role="line"
-         id="tspan10"
-         x="90.854729"
-         y="152.39014"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';stroke-width:0.26458335">3</tspan></text>
+     transform="translate(-93.430962,-119.92959)"
+     id="layer1">
+    <path
+       id="text12"
+       transform="translate(93.430962,119.92959)"
+       d="M 10.871094 0 C 9.1192549 0 7.6088326 0.25819077 6.3378906 0.7734375 C 5.1012985 1.2886842 4.0704885 1.9239923 3.2460938 2.6796875 C 2.4560488 3.4353827 1.8719882 4.1915704 1.4941406 4.9472656 C 1.116293 5.6686111 0.92773438 6.2507185 0.92773438 6.6972656 C 0.92773438 6.9377141 1.0302294 7.1610888 1.2363281 7.3671875 C 1.4424268 7.5732862 1.614554 7.6777344 1.7519531 7.6777344 C 1.9580518 7.6777344 2.1814265 7.4543597 2.421875 7.0078125 C 2.6623235 6.5269155 3.0230093 5.9941025 3.5039062 5.4101562 C 3.9848032 4.7918602 4.6201113 4.2590472 5.4101562 3.8125 C 6.234551 3.331603 7.3166085 3.0917969 8.65625 3.0917969 C 10.064591 3.0917969 11.214328 3.6410413 12.107422 4.7402344 C 13.034866 5.8050776 13.5 7.0408777 13.5 8.4492188 C 13.5 9.3766629 13.225378 10.235346 12.675781 11.025391 C 12.126185 11.781086 11.456061 12.469595 10.666016 13.087891 C 9.9103204 13.671837 9.1889488 14.169834 8.5019531 14.582031 C 7.8149575 14.959879 7.3169605 15.216116 7.0078125 15.353516 C 6.6643147 15.490915 6.3548764 15.714289 6.0800781 16.023438 C 5.8052799 16.298236 5.5983366 16.658922 5.4609375 17.105469 C 5.4265877 17.277218 5.5126513 17.432913 5.71875 17.570312 C 5.9591985 17.673362 6.1661417 17.673362 6.3378906 17.570312 C 6.9218369 17.226815 7.5223289 17.019871 8.140625 16.951172 C 8.7932709 16.848123 9.3096524 16.796875 9.6875 16.796875 C 11.027142 16.796875 12.12563 17.208808 12.984375 18.033203 C 13.877469 18.823248 14.547593 19.837627 14.994141 21.074219 C 15.440688 22.310811 15.664062 23.597858 15.664062 24.9375 C 15.664062 26.345841 15.284992 27.634842 14.529297 28.802734 C 13.807951 29.936277 12.88159 30.829776 11.748047 31.482422 C 10.614504 32.135068 9.4115669 32.460938 8.140625 32.460938 C 7.1788311 32.460938 6.4062119 32.28881 5.8222656 31.945312 C 5.2383193 31.601815 4.7238909 31.241129 4.2773438 30.863281 C 3.9338459 30.588483 3.606023 30.348677 3.296875 30.142578 C 2.987727 29.936479 2.6454257 29.832031 2.2675781 29.832031 C 2.0271296 29.832031 1.7176914 29.987727 1.3398438 30.296875 C 0.99634593 30.571673 0.68690763 30.897543 0.41210938 31.275391 C 0.13731112 31.653238 0 31.962677 0 32.203125 C 0 32.477923 0.30943829 32.787362 0.92773438 33.130859 C 1.5460305 33.474357 2.3022182 33.765411 3.1953125 34.005859 C 4.0884068 34.280658 4.928705 34.417969 5.71875 34.417969 C 7.4705889 34.417969 9.1879544 34.126915 10.871094 33.542969 C 12.588583 32.993372 14.135774 32.185937 15.509766 31.121094 C 16.883757 30.021901 17.982246 28.716469 18.806641 27.205078 C 19.631035 25.659338 20.042969 23.925541 20.042969 22.001953 C 20.042969 20.524912 19.682283 19.184664 18.960938 17.982422 C 18.273942 16.74583 17.34758 15.766267 16.179688 15.044922 C 15.011795 14.289227 13.687978 13.912109 12.210938 13.912109 C 12.073538 13.912109 12.005859 13.877293 12.005859 13.808594 C 12.005859 13.705544 12.057107 13.635912 12.160156 13.601562 C 13.499798 12.811518 14.563471 11.987651 15.353516 11.128906 C 16.143561 10.235812 16.71119 9.3423131 17.054688 8.4492188 C 17.398185 7.5561244 17.570312 6.6974417 17.570312 5.8730469 C 17.570312 4.7051543 17.244443 3.6927289 16.591797 2.8339844 C 15.939151 1.94089 15.0969 1.2543345 14.066406 0.7734375 C 13.070263 0.25819077 12.004637 0 10.871094 0 z "
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.52467346px;line-height:1.25;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond';letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;stroke-width:0.26458335;" />
   </g>
 </svg>

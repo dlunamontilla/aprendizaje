@@ -17,23 +17,24 @@ datos.render(() => {
 
 Para ser utilizado en:
 
-``` html
+```html
 <div id="selector">
-    <h1>{{ variable }}</h1>
+  <h1>{{ variable }}</h1>
 </div>
 ```
+
 Que terminaría renderizado así:
 
-``` html
+```html
 <div id="selector">
-    <h1>Valor de una variable</h1>
+  <h1>Valor de una variable</h1>
 </div>
 ```
 
 De lo contrario lo podrías definir así:
 
 ```js
-const datos = new Datos;
+const datos = new Datos();
 datos.render(() => {
   return {
     variable: "Valor de una variable",
@@ -43,18 +44,50 @@ datos.render(() => {
 
 Para ser utilizado en:
 
-``` html
+```html
 <div id="app">
-    <h1>{{ variable }}</h1>
+  <h1>{{ variable }}</h1>
 </div>
 ```
 
 Que terminaría renderizado así:
 
-``` html
+```html
 <div id="app">
-    <h1>Valor de una variable</h1>
+  <h1>Valor de una variable</h1>
 </div>
 ```
 
 Tome en cuenta que todo lo que esté dentro del elemento seleccionado por `Datos` será renderizado.
+
+## Pie de página
+
+Fragmento HTML del pie de página:
+
+```html
+<footer class="footer main__inner main__inner--footer">
+  <div class="footer__inner">
+    <!-- Aquí es donde se colocará información -->
+    <div class="footer__info">
+      zdsfzsddsafsd
+    </div>
+
+    <div class="autores">
+      <div class="autores__item">
+        (c) 2021 - {{ autor }} | Aprendizaje
+      </div>
+
+      <div class="autores__item" id="btnAdd">
+        Música - Crazy Glue -
+        <a
+          class="autores__enlace"
+          href="https://joshwoodward.com/"
+          title="Josh Woodward"
+          target="_blank"
+          >Josh Woodward</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+```

@@ -1,0 +1,66 @@
+.menu {
+    --padding: 30px;
+    --first-padding: var(--padding);
+    --last-padding: var(--padding);
+    --margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+
+    &--media {
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__item {
+        margin: 0;
+        margin-bottom: var(--margin-bottom);
+        padding-left: 0;
+        position: relative;
+        height: 33px;
+    }
+
+    &__enlace {
+        padding: 0 var(--padding);
+        color: white;
+        transition: 300ms ease;
+        outline: medium none;
+
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+        }
+
+        &:active {
+            transition: none;
+            opacity: 0.7;
+        }
+
+        &:first-of-type {
+            padding-left: var(--first-padding);
+        }
+
+        &:last-of-type {
+            padding-right: var(--last-padding);
+            right: var(--last-padding);
+        }
+
+        &--media {
+            opacity: 0.7;
+            --first-padding: 7px;
+            --last-padding: 7px;
+            --padding: 0;
+            padding: 0;
+            margin: 0;
+
+            --size: 30px;
+
+            svg,
+            img {
+                width: var(--size);
+                height: var(--size);
+            }
+        }
+    }
+}

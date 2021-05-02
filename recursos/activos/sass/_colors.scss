@@ -1,6 +1,15 @@
 .resaltar {
 	--color: var(--color-resaltado);
-    color: var(--color);
+    color: var(--color-resaltado);
+
+    path {
+        fill: var(--color-resaltado);
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
     
 	&--azul {
         --color-resaltado: #{lighten(blue, 20)};
@@ -10,7 +19,7 @@
         --color-resaltado: #{green};
     }
 
-    &--purpura {
+ jjjjjnnjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjhghhjhhhhhhhhhhhhhhhhhhhhhh   &--purpura {
         --color-resaltado: purple;
     }
 
@@ -64,5 +73,9 @@
 
     &--plateado {
         --color-resaltado: #{darken(silver, 10)};
+    }
+
+    &--violeta {
+        --color-resaltado: violet;
     }
 }
