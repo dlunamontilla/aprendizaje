@@ -145,15 +145,22 @@
             background-color: darken($color-secundario, 10);
         }
         &--text {
+            position: relative;
             flex-grow: 1;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                margin: auto;
+                left: 0; right: 0;
+                top: 0; bottom: 0;
+                z-index: 1;
+            }
         }
 
         &--seleccionar {
             flex-grow: 0;
-        }
-
-        * {
-            pointer-events: none;
         }
     }
 }

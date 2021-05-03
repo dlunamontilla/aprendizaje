@@ -33,27 +33,12 @@ jugar({
     path: "recursos/api/letras.json"
 });
 
-// Detener el botón del historial:
-addEventListener("popstate", function (e) {
-    const origen = localStorage.getItem("origen");
+// Esto es temporal:
+const enlaces = document.querySelectorAll("[href$='#']");
 
-    // Si el usuario se sale de ventana modal
-    // se debe quitar la barra de desplazamiento:
-    if (origen && origen === "modal") {
-        document.body.removeAttribute("style");
-
-        if (audios["music"]) {
-            audios["music"].pause();
-        }
-
-        // Actualizar estado:
-        // history.pushState({
-        //     ubicacion: "home"
-        // }, "Page 1", "#home");
-    }
-
-    // Cada vez que cambie el estado se actualizan los datos
-    // para ayudar determinar cuándo dejar o no la barra
-    // de desplazamiento:
-    localStorage.setItem("origen", "modal");
+// Desactivar los enlces que terminen en almoadilla
+enlaces.forEach(enlace => {
+    enlace.addEventListener("click", (e) => {
+        e.preventDefault();
+    })
 });

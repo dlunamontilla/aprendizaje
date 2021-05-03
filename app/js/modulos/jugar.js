@@ -21,10 +21,10 @@ const jugar = (parametros) => {
 
     juegos.addEventListener("click", (e) => {
         const { juego } = e.target.dataset;
+
         if (!juego) return;
 
         e.preventDefault();
-        const enlace = e.target;
 
         localStorage.setItem("origen", "home");
 
@@ -39,7 +39,6 @@ const jugar = (parametros) => {
         escucharAudio.init("#loading", data => {
             // Pronunciar con voz la etiqueta de la pestaña:
             pestannas("#pestannas", function (pintarTeclado, teclado) {
-                location.href = enlace.href;
                 // Abrir ventana modal:
                 ventanaModal.classList.add("presentar--show");
                 
