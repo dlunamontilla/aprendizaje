@@ -35,7 +35,7 @@
 
 /* Propiedades comunes del lienzo y la caja */
 .size {
-  --diametro: 50px;
+  --diametro: 51px;
   width: var(--diametro);
   height: var(--diametro);
 }
