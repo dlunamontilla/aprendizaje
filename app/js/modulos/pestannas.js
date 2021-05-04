@@ -29,7 +29,7 @@ const pestannas = (selector = "#pestannas", fn) => {
     }
 
     audios["music"].setAttribute("src", "multimedia/audio/music/JoshWoodward-TheWake-NoVox-04-CrazyGlue.mp3");
-    audios["music"].volume = 0.3;
+    audios["music"].volume = 0.1;
     audios["music"].setAttribute("loop", "-1");
     audios["music"].play();
 

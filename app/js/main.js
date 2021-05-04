@@ -1,9 +1,7 @@
 // Módulos:
 import Datos from "./modulos/Datos.js";
 import { imagenSVG } from "./modulos/imagenSVG.js";
-import modal from "./modulos/modal.js";
 import jugar from "./modulos/jugar.js";
-import audios from "./modulos/audios.js";
 
 const datos = new Datos;
 datos.render(() => {

@@ -229,8 +229,13 @@
 
         &:hover,
         &:focus {
-            // background-color: var(--fondo);
             --fondo-primario: #{rgba($color-secundario, 0.3)};
+        }
+        
+        &:hover {
+            &::after {
+                background-color: #491f4e;
+            }
         }
 
         &:active {
@@ -275,6 +280,10 @@
             &:focus {
                 --fondo: #{lighten($fondo, 5)};
                 --fondo-primario: #{lighten($fondo-alpha, 5)};
+
+                &::after {
+                    background-color: var(--fondo);
+                }
             }
         }
     }

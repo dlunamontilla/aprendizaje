@@ -527,6 +527,9 @@ jjjjjnnjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 .pestannas__button:hover, .pestannas__button:focus {
   --fondo-primario: rgba(240, 102, 0, 0.3);
 }
+.pestannas__button:hover::after {
+  background-color: #491f4e;
+}
 .pestannas__button:active {
   background-color: rgba(255, 255, 255, 0.1);
   transition: none;
@@ -560,6 +563,9 @@ jjjjjnnjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 .pestannas__button--seleccionado:hover, .pestannas__button--seleccionado:focus {
   --fondo: #ff720b;
   --fondo-primario: rgba(255, 114, 11, 0.3);
+}
+.pestannas__button--seleccionado:hover::after, .pestannas__button--seleccionado:focus::after {
+  background-color: var(--fondo);
 }
 
 .main {
