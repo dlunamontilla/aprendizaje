@@ -479,7 +479,7 @@ jjjjjnnjnjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 }
 @media screen and (min-width: 450px) {
   .opciones {
-    min-width: 360px;
+    min-width: 400px;
   }
 }
 @media screen and (max-width: 449px) {
