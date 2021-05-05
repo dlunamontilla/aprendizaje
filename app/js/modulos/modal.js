@@ -8,6 +8,9 @@ if (!audios["music"]) {
     audios["music"] = audio.cloneNode();
     audios.music.setAttribute("src", "multimedia/audio/music/JoshWoodward-TheWake-NoVox-04-CrazyGlue.mp3");
     audios.music.volume = 0.25;
+
+    // Provocar que se repita:
+    audios.music.setAttribute("loop", "-1");
 }
 
 
