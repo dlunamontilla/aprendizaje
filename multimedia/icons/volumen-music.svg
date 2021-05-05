@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.458332mm"
+   height="26.45833mm"
+   viewBox="0 0 26.458332 26.45833"
+   version="1.1"
+   id="svg909"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="volumen-music.svg">
+  <defs
+     id="defs903" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.1520525"
+     inkscape:cx="35.901022"
+     inkscape:cy="33.702796"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="869"
+     inkscape:window-height="819"
+     inkscape:window-x="2"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata906">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.55435,-113.99222)">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458326;marker:none;enable-background:accumulate"
+       d="m 66.57659,116.62288 -5.299255,5.29924 h -4.416048 c -2.495569,1.62273 -2.789183,7.84884 0,10.59852 h 4.416048 l 5.299255,5.29925 z m 8.266761,4.00626 v 0.003 c -0.288684,0 -0.527344,0.20718 -0.527344,0.54541 v 8.68871 c -0.671659,-0.0567 -1.535784,0.18052 -2.333623,0.64032 -1.40265,0.80982 -2.196364,2.06111 -1.772727,2.79474 0.423641,0.73363 1.904002,0.67185 3.306586,-0.13794 1.032463,-0.59652 1.773059,-1.46044 1.873092,-2.18537 0.0063,-0.0318 0.0094,-0.066 0.0094,-0.10098 v -0.0127 c 0.0012,-0.0318 0.0012,-0.0607 0,-0.091 v -7.83159 c 1.12816,0.33421 2.876167,0.58016 2.876167,2.90971 -0.0034,0.0717 0.05484,0.13105 0.126458,0.13105 0.07161,0 0.128996,-0.0597 0.12646,-0.13105 0.954857,-2.82253 -2.620807,-3.27555 -3.152884,-4.83988 -0.07098,-0.23258 -0.243149,-0.3828 -0.531647,-0.3828 z"
+       id="path3086"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccsccsccsccccscccc" />
+  </g>
+</svg>

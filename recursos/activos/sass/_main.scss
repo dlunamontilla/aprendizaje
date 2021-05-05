@@ -90,7 +90,7 @@
         height: var(--diametro);
         width: var(--diametro);
     }
-
+    
     path {
         transition: 300ms ease;
         fill: white;
@@ -98,7 +98,7 @@
 
     &:hover {
         path {
-            fill: rgb(255, 255, 157);
+            fill: lighten($color-secundario, 50);
         }
     }
 
@@ -153,8 +153,10 @@
                 display: block;
                 position: absolute;
                 margin: auto;
-                left: 0; right: 0;
-                top: 0; bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
                 z-index: 1;
             }
         }
@@ -231,7 +233,7 @@
         &:focus {
             --fondo-primario: #{rgba($color-secundario, 0.3)};
         }
-        
+
         &:hover {
             &::after {
                 background-color: #491f4e;
@@ -440,7 +442,7 @@
 
     h1 {
         font-size: 1.4rem;
-        color: $color-secundario;
+        color: $color-terciario;
     }
 
     h3 {
@@ -583,12 +585,6 @@
 }
 
 .salir {
-    position: absolute;
-    margin: auto;
-    left: auto;
-    right: 5px;
-    top: 5px;
-    bottom: auto;
 
     transition: 300ms ease;
 
@@ -681,7 +677,7 @@
     svg {
         display: block;
         width: var(--size);
-        height: var(--size);
+        height: calc(var(--size) - 50px);
         padding: 10px;
     }
 }
@@ -728,7 +724,7 @@
         width: calc(var(--size) * 4);
         height: var(--size);
 
-        background-color: rgba(rgb(255, 153, 0), 1);
+        background-color: rgba(rgb(255, 255, 255), 0.7);
         clip-path: var(--flecha);
 
         // Rotar en función del espacio disponible de la pantalla del usuario:
@@ -739,5 +735,27 @@
         }
 
         z-index: 1;
+    }
+}
+
+// Barras de navegación:
+.nav {
+    --height: 60px;
+    --gap: 10px;
+
+    // Color temporal:
+    padding: 0 var(--gap);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: var(--height);
+
+    // Modificador para las ventanas modales:
+    &--modal {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 }

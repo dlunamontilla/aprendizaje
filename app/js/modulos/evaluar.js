@@ -44,4 +44,33 @@ const isNodeList = (object) => {
     return evaluar(object) === "[object NodeList]";
 }
 
-export { isObject, isFunction, isString, isNodeList };
+/**
+ * 
+ * @param {any} objeto 
+ * @returns boolean
+ */
+const isHTML = (objeto) => {
+    const expresion = /(HTML|Element)/g;
+    const texto = evaluar(objeto);
+    const encontrado = texto.match(expresion);
+
+    let tipo = "";
+    if ( encontrado ) {
+        tipo = encontrado.join("");
+    }
+
+    return tipo === "HTMLElement";
+}
+
+const isNull = (object) => {
+    return evaluar(object) === "[object Null]";
+}
+
+export {
+    isObject,
+    isFunction,
+    isString,
+    isNodeList,
+    isHTML,
+    isNull
+};

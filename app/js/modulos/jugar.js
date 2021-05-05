@@ -8,7 +8,7 @@ import modal from "./modal.js";
  * @returns 
  */
 const jugar = (parametros) => {
-    const {selectorJuego, selectorModal, path} = parametros;
+    const { selectorJuego, selectorModal, path } = parametros;
 
     // loading:
     const loading = document.querySelector("#loading");
@@ -41,10 +41,10 @@ const jugar = (parametros) => {
             pestannas("#pestannas", function (pintarTeclado, teclado) {
                 // Abrir ventana modal:
                 ventanaModal.classList.add("presentar--show");
-                
+
                 modal({
                     ventanaModal,
-                    salir: "#salir"
+                    selectorNav: "#navigation-modal"
                 });
 
                 pintarTeclado({
