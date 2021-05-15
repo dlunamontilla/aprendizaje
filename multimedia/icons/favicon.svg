@@ -13,9 +13,9 @@
    version="1.1"
    id="svg37"
    sodipodi:docname="favicon.svg"
-   inkscape:export-filename="/home/david/aplicaciones/Proyectos/Aprendizaje/leer/multimedia/icons/homescreen192.png"
-   inkscape:export-xdpi="196.50317"
-   inkscape:export-ydpi="196.50317"
+   inkscape:export-filename="/home/david/aplicaciones/Proyectos/Aprendizaje/leer/multimedia/icons/logo.png"
+   inkscape:export-xdpi="1535.1801"
+   inkscape:export-ydpi="1535.1801"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    style="fill:none">
   <metadata
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,9 +45,9 @@
      inkscape:window-height="828"
      id="namedview39"
      showgrid="false"
-     inkscape:zoom="2.2580673"
-     inkscape:cx="36.606565"
-     inkscape:cy="-13.585259"
+     inkscape:zoom="5.662538"
+     inkscape:cx="-11.602315"
+     inkscape:cy="13.784909"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"

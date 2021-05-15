@@ -82,15 +82,23 @@
 
                <nav class="nav nav--modal" id="navigation-modal">
                   <!-- Controlar entre reproducir o no la música de fondo -->
-                  <div class="audio audio--active">
+                  <div class="audio audio--active nav__item">
                      <button class="audio__button" id="volumen" data-src="multimedia/icons/music.svg"
                         data-toggle-music></button>
                      <button class="audio__button" id="volumen" data-src="multimedia/icons/music-mute.svg"
                         data-toggle-music></button>
                   </div>
 
+                  <!-- Seleccionar el tipo de voz -->
+                  <div class="voz ubuntu-font nav__item">
+                     <label class="voz__item">
+                        <input name="tipo" type="checkbox">
+                        <span class="voz__marcado" data-src="multimedia/icons/mujer-sonido.svg" title="Voz masculina/femenina"></span>
+                     </label>
+                  </div>
+
                   <!-- Salir de la ventana modal -->
-                  <div class="salir" id="salir">
+                  <div class="salir nav__item" id="salir">
                      <a data-salir href="#"></a>
                   </div>
                </nav>

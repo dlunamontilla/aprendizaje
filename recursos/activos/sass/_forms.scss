@@ -8,7 +8,7 @@ button {
 }
 
 .audio {
-    --size: 50px;
+    --size: var(--control-size);
 
     svg {
         display: block;
@@ -79,6 +79,108 @@ button {
             &:last-child {
                 display: none;
             }
+        }
+    }
+}
+
+// Icono de voz que puede cambiar entre
+// masculina y femenina. Es decir, efecto «toggle»:
+.voz {
+    --size: 20px;
+
+    display: flex;
+
+    svg {
+        width: calc(var(--size) * 1.7);
+        height: calc(var(--size) * 1.7);
+        margin-right: 5px;
+    }
+
+    font: {
+        size: 1rem;
+    }
+
+    &__item {
+        position: relative;
+        min-width: var(--control-size);
+        height: var(--control-size);
+
+        input {
+            display: none;
+        }
+    }
+
+    &__marcado {
+        --color-check: #{rgba(white, 0.7)};
+
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: 300ms ease;
+        height: 100%;
+        padding-left: calc(var(--size) + 15px);
+        padding-right: 10px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            transition: none;
+            opacity: 1;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            margin: auto;
+            left: 10px; right: auto;
+            top: 0; bottom: 0;
+            
+            // Transformaciones:
+            transform-origin: top;
+
+
+            // Bordes
+            border: 1px solid rgba(white, 0.3);
+
+            width: var(--size);
+            height: var(--size);
+            transition: 200ms ease;
+        }
+
+        &::after {
+            content: "";
+            color: var(--color-check);
+        }
+
+        path {
+            fill: var(--color-check);
+            transition: 300ms ease;
+        }
+    }
+
+    // Indicar al usuario que ha marcado una opción
+    input:checked ~ &__marcado {
+        --color-check: #0f0;
+        --size-inner: calc(var(--size) / 1.2);
+
+        &::before {
+            width: calc(var(--size-inner) / 1.8);
+            height: var(--size-inner);
+
+            color: var(--color-check);
+            transform: rotateZ(30deg);
+
+            
+            border-radius: 0;
+            border-color: var(--color-check);
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-bottom-width: 3px;
+            border-right-width: 3px;
+            left: calc(var(--size));
         }
     }
 }

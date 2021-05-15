@@ -37,11 +37,11 @@ const modal = (parametros) => {
     reproducir(buttonAudio);
 
     nav.onclick = (e) => {
-        e.preventDefault();
         const control = e.target;
         const { toggleMusic, salir } = control.dataset;
 
         if (isString(salir)) {
+            e.preventDefault();
             document.body.removeAttribute("style");
             ventanaModal.classList.remove("presentar--show");
 

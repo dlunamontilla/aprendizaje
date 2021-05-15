@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="26.458332mm"
    height="26.458332mm"
    viewBox="0 0 26.458332 26.458332"
    version="1.1"
-   id="svg909"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="music.svg">
+   id="svg909">
   <defs
      id="defs903" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="2.5212776"
-     inkscape:cx="104.10128"
-     inkscape:cy="10.800512"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="871"
-     inkscape:window-height="828"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     showguides="true"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="18.994174,30.537594"
-       orientation="0,1"
-       id="guide7595"
-       inkscape:locked="false" />
-  </sodipodi:namedview>
   <metadata
      id="metadata906">
     <rdf:RDF>
@@ -61,10 +25,8 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Capa 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-21.645548,-114.66841)">
+     transform="translate(-21.645548,-114.6684)">
     <g
        id="g7573"
        transform="matrix(0.77468736,0.77671963,-1.1005468,1.0957625,156.46778,-29.731393)"
@@ -72,7 +34,6 @@
     <path
        style="opacity:1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28178126;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 35.687604,116.02313 c -0.520241,0 -0.950527,0.37347 -0.950527,0.983 v 15.65832 c -1.210399,-0.10221 -2.767781,0.32494 -4.205568,1.15354 -2.527719,1.45938 -3.957855,3.71429 -3.194419,5.03635 0.763446,1.3221 3.431168,1.21091 5.958771,-0.24842 1.860604,-1.075 3.195038,-2.63204 3.375315,-3.93844 0.01141,-0.0572 0.0171,-0.11876 0.0171,-0.18159 v -0.0228 c 0.0022,-0.0572 0.0022,-0.1096 0,-0.1639 v -14.11352 c 2.033057,0.6023 5.183268,1.04582 5.183268,5.24393 -0.0058,0.12904 0.09877,0.23585 0.227857,0.23585 0.129044,0 0.232408,-0.10735 0.227842,-0.23585 1.720749,-5.08649 -4.722833,-5.90285 -5.681687,-8.72192 -0.127919,-0.41915 -0.437993,-0.69006 -0.95789,-0.69006 z"
-       id="path7581"
-       inkscape:connector-curvature="0" />
+       id="path7581" />
   </g>
 </svg>
