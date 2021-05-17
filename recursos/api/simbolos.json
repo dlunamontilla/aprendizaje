@@ -1,0 +1,576 @@
+{
+  "A": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/A.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/A.mp3"
+    },
+
+    "letra": "A  a",
+    "simbolo": "multimedia/vector/simbolos/letras/A.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "vocal",
+    "genero": "M"
+  },
+  "B": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/B.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/B.mp3"
+    },
+
+    "letra": "B  b",
+    "simbolo": "multimedia/vector/simbolos/letras/B.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "C": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/C.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/C.mp3"
+    },
+
+    "letra": "C  c",
+    "simbolo": "multimedia/vector/simbolos/letras/C.svg",
+    "className": "resaltar resaltar--verde",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "D": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/D.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/D.mp3"
+    },
+
+    "letra": "D  d",
+    "simbolo": "multimedia/vector/simbolos/letras/D.svg",
+    "className": "resaltar resaltar--plateado",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "E": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/E.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/E.mp3"
+    },
+
+    "letra": "E  e",
+    "simbolo": "multimedia/vector/simbolos/letras/E.svg",
+    "className": "resaltar resaltar--rojo",
+    "tipo": "vocal",
+    "genero": "M"
+  },
+  "F": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/F.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/F.mp3"
+    },
+
+    "letra": "F  f",
+    "simbolo": "multimedia/vector/simbolos/letras/F.svg",
+    "className": "resaltar resaltar--rojo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "G": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/G.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/G.mp3"
+    },
+
+    "letra": "G  g",
+    "simbolo": "multimedia/vector/simbolos/letras/G.svg",
+    "className": "resaltar resaltar--azul",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "H": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/H.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/H.mp3"
+    },
+
+    "letra": "H  h",
+    "simbolo": "multimedia/vector/simbolos/letras/H.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "I": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/I.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/I.mp3"
+    },
+
+    "letra": "I  i",
+    "simbolo": "multimedia/vector/simbolos/letras/I.svg",
+    "className": "resaltar resaltar--verde-brillante",
+    "tipo": "vocal",
+    "genero": "M"
+  },
+  "J": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/J.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/J.mp3"
+    },
+
+    "letra": "J  j",
+    "simbolo": "multimedia/vector/simbolos/letras/J.svg",
+    "className": "resaltar resaltar--verde-turquesa-claro",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "K": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/K.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/K.mp3"
+    },
+
+    "letra": "K  k",
+    "simbolo": "multimedia/vector/simbolos/letras/K.svg",
+    "className": "resaltar resaltar--verde-brillante",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "L": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/L.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/L.mp3"
+    },
+
+    "letra": "L  l",
+    "simbolo": "multimedia/vector/simbolos/letras/L.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "M": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/M.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/M.mp3"
+    },
+
+    "letra": "M  m",
+    "simbolo": "multimedia/vector/simbolos/letras/M.svg",
+    "className": "resaltar resaltar--verde-brillante"
+    ,"tipo": "consonante",
+    "genero": "M"
+  },
+  "N": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/N.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/N.mp3"
+    },
+
+    "letra": "N  n",
+    "simbolo": "multimedia/vector/simbolos/letras/N.svg",
+    "className": "resaltar resaltar--turquesa",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "Ñ": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/Ñ.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/Ñ.mp3"
+    },
+
+    "letra": "Ñ  ñ",
+    "simbolo": "multimedia/vector/simbolos/letras/Ñ.svg",
+    "className": "resaltar resaltar--rosado",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "O": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/O.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/O.mp3"
+    },
+
+    "letra": "O  o",
+    "simbolo": "multimedia/vector/simbolos/letras/O.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "vocal",
+    "genero": "M"
+  },
+  "P": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/P.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/P.mp3"
+    },
+
+    "letra": "P  p",
+    "simbolo": "multimedia/vector/simbolos/letras/P.svg",
+    "className": "resaltar resaltar--azul",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "Q": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/Q.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/Q.mp3"
+    },
+
+    "letra": "Q  q",
+    "simbolo": "multimedia/vector/simbolos/letras/Q.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "R": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/R.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/R.mp3"
+    },
+
+    "letra": "R  r",
+    "simbolo": "multimedia/vector/simbolos/letras/R.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "S": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/S.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/S.mp3"
+    },
+
+    "letra": "S  s",
+    "simbolo": "multimedia/vector/simbolos/letras/S.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "T": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/T.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/T.mp3"
+    },
+
+    "letra": "T  t",
+    "simbolo": "multimedia/vector/simbolos/letras/T.svg",
+    "className": "resaltar resaltar--verde",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "U": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/U.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/U.mp3"
+    },
+
+    "letra": "U  u",
+    "simbolo": "multimedia/vector/simbolos/letras/U.svg",
+    "className": "resaltar resaltar--violeta",
+    "tipo": "vocal",
+    "genero": "M"
+  },
+  "V": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/V.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/V.mp3"
+    },
+
+    "letra": "V  v",
+    "simbolo": "multimedia/vector/simbolos/letras/V.svg",
+    "className": "resaltar resaltar--rosado",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "W": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/W.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/W.mp3"
+    },
+
+    "letra": "W  w",
+    "simbolo": "multimedia/vector/simbolos/letras/W.svg",
+    "className": "resaltar resaltar--violeta",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "X": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/X.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/X.mp3"
+    },
+
+    "letra": "X  x",
+    "simbolo": "multimedia/vector/simbolos/letras/X.svg",
+    "className": "resaltar resaltar--rojo",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "Y": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/Y.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/Y.mp3"
+    },
+
+    "letra": "Y  y",
+    "simbolo": "multimedia/vector/simbolos/letras/Y.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "Z": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/letras/Z.mp3",
+      "M": "multimedia/audio/voz/masculino/letras/Z.mp3"
+    },
+
+    "letra": "Z  z",
+    "simbolo": "multimedia/vector/simbolos/letras/Z.svg",
+    "className": "resaltar resaltar--plateado",
+    "tipo": "consonante",
+    "genero": "M"
+  },
+  "1": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/1.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/1.mp3"
+    },
+
+    "letra": "1",
+    "simbolo": "multimedia/vector/simbolos/numeros/1.svg",
+    "className": "resaltar resaltar--azul",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "2": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/2.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/2.mp3"
+    },
+
+    "letra": "2",
+    "simbolo": "multimedia/vector/simbolos/numeros/2.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "3": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/3.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/3.mp3"
+    },
+
+    "letra": "3",
+    "simbolo": "multimedia/vector/simbolos/numeros/3.svg",
+    "className": "resaltar resaltar--morado",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "4": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/4.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/4.mp3"
+    },
+
+    "letra": "4",
+    "simbolo": "multimedia/vector/simbolos/numeros/4.svg",
+    "className": "resaltar resaltar--verde",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "5": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/5.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/5.mp3"
+    },
+
+    "letra": "5",
+    "simbolo": "multimedia/vector/simbolos/numeros/5.svg",
+    "className": "resaltar resaltar--violeta",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "6": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/6.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/6.mp3"
+    },
+
+    "letra": "6",
+    "simbolo": "multimedia/vector/simbolos/numeros/6.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "7": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/7.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/7.mp3"
+    },
+
+    "letra": "7",
+    "simbolo": "multimedia/vector/simbolos/numeros/7.svg",
+    "className": "resaltar resaltar--verde-brillante",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "8": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/8.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/8.mp3"
+    },
+
+    "letra": "8",
+    "simbolo": "multimedia/vector/simbolos/numeros/8.svg",
+    "className": "resaltar resaltar--plateado",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "9": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/9.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/9.mp3"
+    },
+
+    "letra": "9",
+    "simbolo": "multimedia/vector/simbolos/numeros/9.svg",
+    "className": "resaltar resaltar--rosado",
+    "tipo": "numero",
+    "genero": "M"
+  },
+  "0": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/0.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/0.mp3"
+    },
+
+    "letra": "0",
+    "simbolo": "multimedia/vector/simbolos/numeros/0.svg",
+    "className": "resaltar resaltar--turquesa",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "10": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/10.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/10.mp3"
+    },
+
+    "letra": "10",
+    "simbolo": "multimedia/vector/simbolos/numeros/10.svg",
+    "className": "resaltar resaltar--turquesa",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "20": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/20.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/20.mp3"
+    },
+
+    "letra": "20",
+    "simbolo": "multimedia/vector/simbolos/numeros/20.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "30": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/30.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/30.mp3"
+    },
+
+    "letra": "30",
+    "simbolo": "multimedia/vector/simbolos/numeros/30.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "40": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/40.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/40.mp3"
+    },
+
+    "letra": "40",
+    "simbolo": "multimedia/vector/simbolos/numeros/40.svg",
+    "className": "resaltar resaltar--verde-brillante",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "50": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/50.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/50.mp3"
+    },
+
+    "letra": "50",
+    "simbolo": "multimedia/vector/simbolos/numeros/50.svg",
+    "className": "resaltar resaltar--amarillo",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "60": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/60.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/60.mp3"
+    },
+
+    "letra": "60",
+    "simbolo": "multimedia/vector/simbolos/numeros/60.svg",
+    "className": "resaltar resaltar--verde",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "70": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/70.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/70.mp3"
+    },
+
+    "letra": "70",
+    "simbolo": "multimedia/vector/simbolos/numeros/70.svg",
+    "className": "resaltar resaltar--azul",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "80": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/80.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/80.mp3"
+    },
+
+    "letra": "80",
+    "simbolo": "multimedia/vector/simbolos/numeros/80.svg",
+    "className": "resaltar resaltar--morado",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "90": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/90.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/90.mp3"
+    },
+
+    "letra": "90",
+    "simbolo": "multimedia/vector/simbolos/numeros/90.svg",
+    "className": "resaltar resaltar--naranja",
+    "tipo": "numero",
+    "genero": "M"
+  },
+
+  "100": {
+    "audio": {
+      "F": "multimedia/audio/voz/femenino/numeros/100.mp3",
+      "M": "multimedia/audio/voz/masculino/numeros/100.mp3"
+    },
+
+    "letra": "100",
+    "simbolo": "multimedia/vector/simbolos/numeros/100.svg",
+    "className": "resaltar resaltar--verde",
+    "tipo": "numero",
+    "genero": "M"
+  }
+}

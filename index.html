@@ -9,7 +9,9 @@
    <!-- Protocolo OpenGraph -->
    <meta property="og:title" content="Conozca el sonido de las letras en español">
    <meta property="og:type" content="website">
-
+   <meta property="og:description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
+   <meta name="description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
+   
    <!-- Manifest -->
    <link href="manifest.json" rel="manifest">
 
@@ -48,12 +50,17 @@
       <div class="content ubuntu-font main__inner main__inner--content">
          <!-- Menú de juegos -->
          <div class="content__inner">
-            <h3>Seleccione un juego de aprendizaje</h3>
+            <h3>¿Qué debo hacer?</h3>
             <hr>
 
-            <p>Esta aplicación será un programa de aprendizaje completo en el futuro, pero entretenida. Sin embargo, en
-               esta primera versión se incluye, por ahora, la enseñaza de letras y números mediante su pronunciación.
-               Solo debe tocar (o hacer clic) sobre la letra que desea escuchar. </p>
+            <p>Seleccionar una lección para aprender mediante sonido, las vocales, consonantes, números, entre otras opciones disponibles.</p>
+            
+            <blockquote class="cita">
+               <h4>Importante</h4>
+               <p>Se está trabajando en estos momentos para agregar nuevos juegos de aprendizaje. Por ahora, están disponibles en esta web el sonido de las <strong>vocales, consonantes y números.</strong></p>
+            </blockquote>
+
+            </p>
 
             <h3>Seleccione un juego</h3>
             <div class="content__inner juegos">
@@ -71,7 +78,7 @@
 
 
          <!-- Juegos -->
-         <div class="presentar" id="presentar-simbolos">
+         <div class="presentar presentar--show" id="presentar-simbolos">
             <div class="presentar__inner presentar__inner--contenido">
                <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
 
@@ -91,9 +98,10 @@
 
                   <!-- Seleccionar el tipo de voz -->
                   <div class="voz ubuntu-font nav__item">
-                     <label class="voz__item">
-                        <input name="tipo" type="checkbox">
-                        <span class="voz__marcado" data-src="multimedia/icons/mujer-sonido.svg" title="Voz masculina/femenina"></span>
+                     <label class="voz__item" data-juego="no">
+                        <input name="tipo" type="checkbox" data-tipo="checkbox">
+                        <span class="voz__marcado" data-src="multimedia/icons/mujer-sonido.svg"
+                           title="Voz masculina/femenina"></span>
                      </label>
                   </div>
 

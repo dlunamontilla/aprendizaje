@@ -1,3 +1,5 @@
+import { isNull } from "./evaluar.js";
+
 /**
  * 
  * @param {object} parametros 
@@ -19,18 +21,26 @@ const pintarTeclado = (parametros) => {
 
     // Contenedor donde se presentarán las letras:
     const contenedorSimbolo = document.querySelector(selectorSimbolo);
-    
+
+    const tipoVoz = localStorage.getItem("voz");
+    if (isNull(tipoVoz)) {
+        tipoVoz = "M";
+    }
+
     // Modificar la data y formar un array a partir de él:
-    for (let propiedad in data) {
-        if ( !data[propiedad]["letras"] ) {
-            const letras = data[propiedad].letra;
-            data[propiedad]["letras"] = letras;
+    const datos = data[tipoVoz];
+
+    // Modificar la data y formar un array a partir de él:
+    for (let propiedad in datos) {
+        if (!datos[propiedad]["letras"]) {
+            const letras = datos[propiedad].letra;
+            datos[propiedad]["letras"] = letras;
 
             // Letra individual:
-            data[propiedad]["letra"] = propiedad;
+            datos[propiedad]["letra"] = propiedad;
         }
-        
-        teclas.push(data[propiedad]);
+
+        teclas.push(datos[propiedad]);
     }
 
     if (!(Array.isArray(teclas) || target))
@@ -43,7 +53,7 @@ const pintarTeclado = (parametros) => {
 
     target.textContent = "";
     contenedorTecla.innerHTML = "";
-    
+
     teclas.forEach(tecla => {
         if (tecla.tipo == tipo)
             contenedorTecla.innerHTML += `<button class="teclas__item ${tecla.className}" data-simbolo="${tecla.letra}"><span>${tecla.letra}</span></button>`;
@@ -54,9 +64,9 @@ const pintarTeclado = (parametros) => {
     contenedorTecla.addEventListener("click", (e) => {
         const { simbolo } = e.target.dataset;
 
-        if ( simbolo ) {
-            contenedorSimbolo.innerHTML = `<div class="simbolo__item ${data[simbolo].className}">${data[simbolo].simbolo}</div>`;
-            data[simbolo].audio.play();
+        if (simbolo) {
+            contenedorSimbolo.innerHTML = `<div class="simbolo__item ${datos[simbolo].className}">${datos[simbolo].simbolo}</div>`;
+            datos[simbolo].audio.play();
         }
     });
 }

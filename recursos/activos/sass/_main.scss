@@ -44,7 +44,7 @@
             flex-grow: var(--flex-grow-content);
 
             font: {
-                size: 15rem;
+                size: 2rem;
                 family: "EB Garamond", serif;
             }
         }
@@ -604,7 +604,7 @@
             position: absolute;
             margin: auto;
             left: 0;
-            right: 0;
+            right: 3px;
             top: 0;
             bottom: 0;
             justify-content: center;
@@ -637,6 +637,9 @@
     }
 }
 
+// Es el caracter o figuras geométricas
+// que se visualizará en grande tras presionar
+// una tecla del teclado virtual:
 .simbolo {
     position: absolute;
     margin: auto;
@@ -662,8 +665,12 @@
 
     svg {
         display: block;
-        width: var(--size);
+        width: calc(var(--size) - 20px);
         height: calc(var(--size) - 20px);
+
+        --max-size: 980px;
+        max-width: var(--max-size);
+
         padding: 10px;
     }
 }
@@ -731,7 +738,6 @@
     --control-size: calc(var(--height) - 5px);
 
     // Color temporal:
-    padding: 0 var(--gap);
     position: absolute;
     margin: auto;
     left: 0;
@@ -745,16 +751,20 @@
     &--modal {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: end;
+        padding-right: 5px;
     }
 
+    // Elementos de la barra de navegación:
     &__item {
         position: relative;
         background-color: rgba($color-base, 0.3);
         overflow: hidden;
         height: calc(var(--height) - 5px);
-        
-        --border: #{1px solid rgba(white, 0.2)};
+
+        background-image: linear-gradient(to top, rgba(white, 0.07), transparent);
+
+        --border: #{1px solid rgba(white, 0.1)};
         --border-radius: calc(var(--height) / 2);
 
         border-top: var(--border);
@@ -795,4 +805,36 @@
     }
 
     z-index: 3;
+}
+
+// Formato de citas
+.cita {
+    background-color: rgba(rgb(245, 180, 3), 0.3);
+    color: lighten(yellow, 40);
+
+    font-size: 90%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 187, 0, 0.3);
+
+    p {
+        --margin: 0;
+
+        &:first-of-type {
+            margin-top: var(--margin);
+        }
+
+        &:last-of-type {
+            margin-bottom: var(--margin);
+        }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }

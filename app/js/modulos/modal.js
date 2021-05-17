@@ -1,5 +1,6 @@
 import audios from "./audios.js";
-import { isString, isHTML, isNull } from "./evaluar.js";
+import { isString, isHTML, isNull, isLabel } from "./evaluar.js";
+import preferenciaVoz from "./preferenciaVoz.js";
 
 
 const audio = document.createElement("audio");
@@ -27,8 +28,17 @@ const modal = (parametros) => {
 
     // Barra de navegación de la ventana modal:
     const nav = document.querySelector(selectorNav);
-
+    
+    
     if (!(nav || ventanaModal)) return;
+
+    const tipoVoz = nav.querySelector("label");
+
+    // Mostrar las preferencias de voz escogidas
+    // por el usuario:
+    if ( isLabel(tipoVoz) ) {
+        preferenciaVoz(tipoVoz);
+    }
 
     // Obtener el botón audio de la barra de navegación:
     const buttonAudio = nav.querySelector(".audio");
@@ -55,6 +65,9 @@ const modal = (parametros) => {
             toggleSound(container);
         }
 
+        if ( isLabel(e.target) ) {
+            const preferencia = preferenciaVoz(e.target, true);
+        }
     }
 }
 

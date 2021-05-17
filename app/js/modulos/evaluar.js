@@ -6,7 +6,7 @@
 
 const evaluar = (objeto) => {
     return Object.prototype.toString.call(objeto);
-}
+};
 
 /**
  * 
@@ -15,7 +15,7 @@ const evaluar = (objeto) => {
  */
 const isObject = (objeto) => {
     return evaluar(objeto) === "[object Object]";
-}
+};
 
 /**
  * 
@@ -24,7 +24,7 @@ const isObject = (objeto) => {
  */
 const isFunction = (objeto) => {
     return typeof objeto === "function";
-}
+};
 
 /**
  * 
@@ -33,7 +33,7 @@ const isFunction = (objeto) => {
  */
 const isString = (object) => {
     return typeof object === "string";
-}
+};
 
 /**
  * 
@@ -42,7 +42,7 @@ const isString = (object) => {
  */
 const isNodeList = (object) => {
     return evaluar(object) === "[object NodeList]";
-}
+};
 
 /**
  * 
@@ -55,15 +55,79 @@ const isHTML = (objeto) => {
     const encontrado = texto.match(expresion);
 
     let tipo = "";
-    if ( encontrado ) {
+    if (encontrado) {
         tipo = encontrado.join("");
     }
 
     return tipo === "HTMLElement";
-}
+};
 
-const isNull = (object) => {
-    return evaluar(object) === "[object Null]";
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isNull = (any) => {
+    return evaluar(any) === "[object Null]";
+};
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isLabel = (any) => {
+    return evaluar(any) === "[object HTMLLabelElement]";
+};
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isAudio = (any) => {
+    return evaluar(any) === "[object HTMLAudioElement]";
+};
+
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isButton = (any) => {
+    return evaluar(any) === "[object HTMLButtonElement]";
+};
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isInput = (any) => {
+    return evaluar(any) === "[object HTMLInputElement]";
+};
+
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isCheckbox = (any) => {
+    if (!isInput(any))
+        return false;
+
+    return any.getAttribute("type") === "checkbox";
+};
+
+/**
+ * 
+ * @param {any} any 
+ * @returns boolean
+ */
+const isDefined = (any) => {
+    return typeof any !== "undefined";
 }
 
 export {
@@ -72,5 +136,11 @@ export {
     isString,
     isNodeList,
     isHTML,
-    isNull
+    isNull,
+    isLabel,
+    isAudio,
+    isButton,
+    isInput,
+    isCheckbox,
+    isDefined
 };

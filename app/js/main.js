@@ -1,7 +1,7 @@
 // Módulos:
 import Datos from "./modulos/Datos.js";
+import escucharSonido from "./modulos/EscucharSonido.js";
 import { imagenSVG } from "./modulos/imagenSVG.js";
-import jugar from "./modulos/jugar.js";
 
 const datos = new Datos;
 datos.render(() => {
@@ -9,7 +9,7 @@ datos.render(() => {
         letra: "A",
         autor: "David E Luna M",
         title: "Aprendiendo",
-        indicaciones: "Seleccione un juego de aprendizaje",
+        indicaciones: "Escuchando lecciones",
         musica: "multimedia/audio/music/JoshWoodward-TheWake-NoVox-04-CrazyGlue.mp3",
         teclado: "multimedia/icons/teclado.svg",
         logo: "multimedia/icons/logo.svg",
@@ -24,12 +24,6 @@ imagenSVG();
 // Desactivado por si algo sale mal:
 // jugar(".juegos", "recursos/api/letras.json");
 
-// Modificaciones que pasa a un objeto como parametro:
-jugar({
-    selectorJuego: ".juegos",
-    selectorModal: "#presentar-simbolos",
-    path: "recursos/api/letras.json"
-});
 
 // Esto es temporal:
 const enlaces = document.querySelectorAll("[href$='#']");
@@ -40,3 +34,5 @@ enlaces.forEach(enlace => {
         e.preventDefault();
     })
 });
+
+escucharSonido.init("recursos/api/simbolos.json");
