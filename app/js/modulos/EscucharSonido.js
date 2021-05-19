@@ -203,6 +203,13 @@ class EscucharSonido {
             return;
         }
 
+        const loading = document.querySelector("#loading");
+
+        if (isHTML(loading)) {
+            loading.classList.remove("none");
+        }
+        
+
         const promesa = await fetch(path);
         const datos = await promesa.json();
         const promesas = [];
@@ -242,13 +249,6 @@ class EscucharSonido {
             }
 
             this.datos.push(datos[propiedad]);
-        }
-
-
-        const loading = document.querySelector("#loading");
-
-        if (isHTML(loading)) {
-            loading.classList.remove("none");
         }
 
         Promise.all(promesas).then(() => {
