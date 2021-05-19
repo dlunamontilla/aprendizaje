@@ -1,7 +1,6 @@
 import { isNull } from "./evaluar.js";
 
 class PreferenciaVoz {
-
     /**
      * 
      * @returns
@@ -14,8 +13,6 @@ class PreferenciaVoz {
         if (isNull(vozFemenina)) return;
 
         const preferencia = this.obtener();
-
-        console.log( preferencia );
 
         if ( preferencia === "F" ) {
             vozFemenina.setAttribute("checked", "true");

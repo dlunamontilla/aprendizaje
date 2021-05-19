@@ -33,20 +33,20 @@ class ToggleSound {
         this.reproducir = (elementoHTML) => {
             if (!isHTML(elementoHTML))
                 return;
-    
+
             this.audio.play();
             elementoHTML.classList.add("audio--active");
         }
 
         /**
          * 
-         * @param {HTMLElement} elementoHTML 
+         * @param {HTMLElement} elementoHTML
          * @returns 
          */
         this.pausar = (elementoHTML) => {
             if (!isHTML(elementoHTML))
                 return;
-    
+
             this.audio.pause();
             elementoHTML.classList.remove("audio--active");
         }
@@ -66,14 +66,14 @@ class ToggleSound {
             this.audio.play();
         }
 
-        if ( !isHTML(nav))
+        if (!isHTML(nav))
             return;
 
         const toggleMusic = nav.querySelector("[data-toggle-music]");
 
-        if ( toggleMusic ) {
+        if (toggleMusic) {
             const parent = toggleMusic.parentNode;
-            
+
             (escuchar === "reproducir")
                 ? this.reproducir(parent) : this.pausar(parent);
         }
@@ -98,6 +98,23 @@ class ToggleSound {
 
         (preferencia === "reproducir")
             ? this.reproducir(container) : this.pausar(container);
+
+        console.log( container );
+    }
+
+    /**
+     * 
+     * @param {HTMLElement} elementoHTML
+     * @returns
+     * 
+     * Pausar la música
+     */
+    pause(elementoHTML) {
+        if (!isHTML(elementoHTML))
+            return;
+
+        const container = elementoHTML.parentNode;
+        this.pausar(container);
     }
 }
 

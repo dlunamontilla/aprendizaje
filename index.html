@@ -64,7 +64,7 @@
 
             <h3>Seleccione un juego</h3>
             <div class="content__inner juegos">
-               <a class="juegos__item juegos__item--text" data-juego="Letras y números" href="#">
+               <a class="juegos__item juegos__item--text" data-juego="Letras y números" data-href="{{ letras-numeros }}" href="#">
                   <h3>Letras y números</h3>
                   <span data-src="multimedia/icons/volumen-music.svg"></span>
                   <span>Presiona aquí para escuchar</span>
@@ -78,7 +78,7 @@
 
 
          <!-- Juegos -->
-         <div class="presentar presentar--show" id="presentar-simbolos">
+         <div class="presentar" id="presentar-simbolos">
             <div class="presentar__inner presentar__inner--contenido">
                <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
 
@@ -197,7 +197,7 @@
                </svg>
             </div>
 
-            <span id="aviso">Cargando voces</span>
+            <span id="aviso"></span>
          </div>
       </div>
    </main>

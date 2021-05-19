@@ -23,8 +23,21 @@
 
 @keyframes fadeIn {
     from {
-        opacity: 0.5;
-        transform: scale(0.95) rotateX(-10deg);
+        opacity: 0.2;
+        transform: rotateX(-10deg);
     }
 }
 
+@keyframes fadeOut {
+    to {
+        opacity: 0.1;
+    }
+}
+
+.fadeOut {
+    animation: 200ms ease fadeOut 1;
+}
+
+.fadeIn {
+    animation: 200ms ease fadeIn 1;
+}

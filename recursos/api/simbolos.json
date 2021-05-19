@@ -572,5 +572,22 @@
     "className": "resaltar resaltar--verde",
     "tipo": "numero",
     "genero": "M"
+  },
+
+  "menu": {
+    "consonante": {
+      "F": "multimedia/audio/menu/femenino/consonantes.mp3",
+      "M": "multimedia/audio/menu/masculino/consonantes.mp3"
+    },
+    
+    "vocal": {
+      "F": "multimedia/audio/menu/femenino/vocales.mp3",
+      "M": "multimedia/audio/menu/masculino/vocales.mp3"
+    },
+  
+    "numero": {
+      "F": "multimedia/audio/menu/femenino/numeros.mp3",
+      "M": "multimedia/audio/menu/masculino/numeros.mp3"
+    }
   }
 }

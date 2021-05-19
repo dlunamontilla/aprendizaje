@@ -1,21 +1,7 @@
 import { isCheckbox, isDefined, isNull } from "./evaluar.js";
 import preferenciaVoz from "./PreferenciaVoz.js";
-import audios from "./audios.js";
 import toggleSound from "./ToggleSound.js";
-
-// Establecer la música de fondo:
-const audio = document.createElement("audio");
-
-if (!audios["music"]) {
-    audios["music"] = audio.cloneNode();
-    audios.music.setAttribute("src", "multimedia/audio/music/JoshWoodward-TheWake-NoVox-04-CrazyGlue.mp3");
-    audios.music.volume = 0.25;
-
-    // Provocar que se repita:
-    audios.music.setAttribute("loop", "-1");
-}
-
-
+import juegos from "./Juegos.js";
 /**
  * 
  * @param {string} selector 
@@ -24,15 +10,22 @@ if (!audios["music"]) {
  * El objetivo es seleccionar la barra de navegación e interactuar
  * con los elementos contenidos en él.
  */
-const navBar = (selector) => {
-    const nav = document.querySelector(selector);
+const navBar = (selectores) => {
+    const {
+        selectorNav = "#navigation-modal",
+        selectorVentanaModal = "#presentar-simbolos"
+    } = selectores;
 
+    const ventanaModal = document.querySelector(selectorVentanaModal);
+    if (isNull(ventanaModal)) return;
+
+    const nav = ventanaModal.querySelector(selectorNav);
     if (isNull(nav)) return;
 
     // Inicializar la reproducción de audio:
     toggleSound.inicializar(nav);
 
-    nav.addEventListener("click", (e) => {
+    const eventHandler = (e) => {
         const control = e.target;
         const { toggleMusic, salir } = control.dataset;
 
@@ -44,20 +37,29 @@ const navBar = (selector) => {
 
         if (isDefined(salir)) {
             document.body.removeAttribute("style");
-            // ventanaModal.classList.remove("presentar--show");
 
-            // Pausar la música si existe
-            if (audios["music"]) {
-                audios["music"].pause();
+            const handlerEvent = () => {
+                ventanaModal.classList.remove("presentar--show");
+                ventanaModal.removeEventListener("animationend");
             }
+
+            // Cerrar la ventana al terminar la animación:
+            ventanaModal.classList.add("fadeOut");
+            // ventanaModal.addEventListener("animationend", handlerEvent);
+            // ventanaModal.removeEventListener("animationend", handlerEvent);
+
+            juegos.salir();
+
+            toggleSound.pause(control);
         }
 
         // Controlar la música de fondo de la aplicación:
         if (isDefined(toggleMusic)) {
             toggleSound.toggle(control);
         }
+    };
 
-    }, false);
+    nav.onclick = eventHandler;
 }
 
 export default navBar;

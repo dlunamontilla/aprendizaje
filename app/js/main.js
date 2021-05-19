@@ -2,6 +2,9 @@
 import Datos from "./modulos/Datos.js";
 import escucharSonido from "./modulos/EscucharSonido.js";
 import { imagenSVG } from "./modulos/imagenSVG.js";
+import juegos from "./modulos/Juegos.js";
+
+import pestanna from "./modulos/seleccionarPestana.js";
 
 const datos = new Datos;
 datos.render(() => {
@@ -13,7 +16,8 @@ datos.render(() => {
         musica: "multimedia/audio/music/JoshWoodward-TheWake-NoVox-04-CrazyGlue.mp3",
         teclado: "multimedia/icons/teclado.svg",
         logo: "multimedia/icons/logo.svg",
-        "marca-de-agua": "multimedia/logos/favicon-variante.svg"
+        "marca-de-agua": "multimedia/logos/favicon-variante.svg",
+        "letras-numeros": "recursos/api/simbolos.json"
     };
 });
 
@@ -35,4 +39,10 @@ enlaces.forEach(enlace => {
     })
 });
 
-escucharSonido.init("recursos/api/simbolos.json");
+// escucharSonido.init("recursos/api/simbolos.json");
+
+
+// Seleccionar pestañas:
+pestanna.seleccionar();
+
+juegos.abrir();

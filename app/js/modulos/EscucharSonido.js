@@ -1,7 +1,10 @@
-import { isAudio, isFunction, isNull, isObject, isString, isButton } from "./evaluar.js";
+import { isAudio, isFunction, isNull, isObject, isString, isButton, isDefined, isHTML } from "./evaluar.js";
 import navBar from "./navBar.js";
 import preferenciaVoz from "./PreferenciaVoz.js";
 import tipoTeclado from "./TipoTeclado.js";
+import audios from "./audios.js";
+
+var num = 0;
 
 /**
  * @description 
@@ -19,7 +22,10 @@ class EscucharSonido {
         this.simbolos = {};
         this.controls = [];
 
+        // Esto no se debe hacer. Se corregirá en el futuro:
         this.audio = document.createElement("audio");
+        this.soundTab = document.createElement("audio");
+
         /**
          * 
          * @param {object} datos 
@@ -27,10 +33,20 @@ class EscucharSonido {
          * @returns 
          * @description Pintar el teclado a partir de los datos cargados en la memoria
          */
-        this.pintarTeclado = (datos, simbolos) => {
+        this.pintarTeclado = () => {
+            const { datos, simbolos } = audios;
+
             if (!(isObject(datos) || isObject(simbolos))) {
                 return;
             }
+
+
+            // Cargar los archivos de audio:
+            const { menu } = simbolos;
+
+            // Obtener el contenedor de las pestañas del teclado. Esta
+            // opción es termporal mientras se reescribe el código:
+            const pestanna = document.querySelector("#pestannas");
 
             const letra = document.querySelector("#letra");
             if (isNull(letra)) {
@@ -39,6 +55,7 @@ class EscucharSonido {
 
             /**
              * 
+             * @param {string} className 
              * @param {string} simbolo 
              * @returns string
              */
@@ -61,23 +78,74 @@ class EscucharSonido {
                 return;
             }
 
+            const obtenerTeclado = () => {
+                const tipoTeclas = tipoTeclado.obtener();
+
+                let html = "";
+                datos.forEach(value => {
+                    if (tipoTeclas === value.tipo) {
+                        html += button(value);
+                    }
+                });
+
+                return html;
+            };
+
+            if (!isDefined(audios["menuAudio"]) && isObject(menu)) {
+
+                audios["menuAudio"] = menu;
+
+                const { menuAudio } = audios;
+
+                for (let tipo in menuAudio) {
+                    const nombre = menuAudio[tipo];
+
+                    if (isObject(nombre)) {
+                        for (let genero in nombre) {
+                            const path = nombre[genero];
+                            const soundTab = this.soundTab.cloneNode(false);
+                            soundTab.setAttribute("src", path);
+                            nombre[genero] = soundTab;
+                        }
+                    }
+                }
+            }
+
+
+            // Preparar el teclado:
             const teclas = document.createElement("div");
             teclas.classList.add("teclas");
 
             teclado.textContent = "";
             teclado.append(teclas);
 
-            const tipoTeclas = tipoTeclado.obtener();
-            
-            teclas.innerHTML = "";
-            datos.forEach(value => {
-                if ( tipoTeclas === value.tipo ) {
-                    teclas.innerHTML += button(value);
-                }
-            });
+            teclas.innerHTML = obtenerTeclado();
+
+            // Cargar el teclado con cada click del usuario.
+            if (!isNull(pestanna)) {
+                pestanna.addEventListener("click", (e) => {
+                    const control = e.target;
+                    if (!isButton(control)) return;
+
+                    const { tipo } = control.dataset;
+
+                    if (isDefined(tipo)) {
+                        teclas.innerHTML = obtenerTeclado();
+
+                        // Reproducir el audio del menú de navegación:
+                        const genero = menu[tipo];
+                        if (!isDefined(genero)) return;
+
+                        const preferencia = preferenciaVoz.obtener();
+                        if (!isAudio(genero[preferencia])) return;
+
+                        genero[preferencia].play();
+                    }
+                }, false);
+            }
 
             // Cargar en el control el tipo de voz:
-            
+
 
             teclas.addEventListener("click", (e) => {
                 const button = e.target;
@@ -105,6 +173,11 @@ class EscucharSonido {
          * barra de navegación de la ventana modal de juegos.
          */
         this.nav = () => {
+            const selectores = {
+                nav: "#navigation-modal",
+                ventanaModal: "#presentar-simbolos"
+            };
+
             navBar("#navigation-modal");
         }
     }
@@ -116,6 +189,18 @@ class EscucharSonido {
      */
     async init(path, fn) {
         if (!isString(path)) {
+            return;
+        }
+
+        console.clear();
+        if ( isDefined(audios["datos"] && isDefined(audios["simbolos"])) ) {
+            this.pintarTeclado();
+
+            if (isFunction(fn)) {
+                fn();
+                this.nav();
+            }
+
             return;
         }
 
@@ -140,6 +225,8 @@ class EscucharSonido {
 
             const objeto = datos[propiedad];
 
+            if (!isDefined(objeto.simbolo)) continue;
+
             fetch(objeto.simbolo)
                 .then(respuesta => respuesta.text())
                 .then(data => {
@@ -149,21 +236,41 @@ class EscucharSonido {
             promesas.push(objeto.simbolo);
 
             const letras = datos[propiedad];
-            letras["letras"] = letras.letra;
-            letras["letra"] = propiedad;
+
+            if (isDefined(letras.letra)) {
+                letras["letras"] = letras.letra;
+                letras["letra"] = propiedad;
+            }
 
             this.datos.push(datos[propiedad]);
         }
 
+
+        const loading = document.querySelector("#loading");
+
+        if (isHTML(loading)) {
+            loading.classList.remove("none");
+        }
+
         Promise.all(promesas).then(() => {
             promesas.length = 0;
-            
+
             // Se cargan los datos reproducir el audio:
             this.simbolos = datos;
             
-            this.pintarTeclado(this.datos, this.simbolos);
+            audios["datos"] = this.datos;
+            audios["simbolos"] = this.simbolos;
+
+            
             if (isFunction(fn)) {
-                fn(this.pintarTeclado);
+                setTimeout(() => {
+                    this.pintarTeclado();
+                    fn();
+
+                    if ( isHTML(loading) ) {
+                        loading.classList.add("none");
+                    }
+                }, 500);
             }
 
             this.nav();
