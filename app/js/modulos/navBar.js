@@ -37,16 +37,9 @@ const navBar = (selectores) => {
 
         if (isDefined(salir)) {
             document.body.removeAttribute("style");
-
-            const handlerEvent = () => {
-                ventanaModal.classList.remove("presentar--show");
-                ventanaModal.removeEventListener("animationend");
-            }
-
+            
             // Cerrar la ventana al terminar la animación:
             ventanaModal.classList.add("fadeOut");
-            // ventanaModal.addEventListener("animationend", handlerEvent);
-            // ventanaModal.removeEventListener("animationend", handlerEvent);
 
             juegos.salir();
 

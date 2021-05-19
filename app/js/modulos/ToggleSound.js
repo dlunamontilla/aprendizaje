@@ -98,8 +98,6 @@ class ToggleSound {
 
         (preferencia === "reproducir")
             ? this.reproducir(container) : this.pausar(container);
-
-        console.log( container );
     }
 
     /**

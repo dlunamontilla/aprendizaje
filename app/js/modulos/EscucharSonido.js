@@ -192,7 +192,6 @@ class EscucharSonido {
             return;
         }
 
-        console.clear();
         if ( isDefined(audios["datos"] && isDefined(audios["simbolos"])) ) {
             this.pintarTeclado();
 
