@@ -37,10 +37,9 @@ class Juegos {
 
             this.ventana = ventana;
             ventana.removeEventListener("animationend", this.estado);
-            
             if (isDefined(juego) && isDefined(href)) {
-                if (isHTML("aviso")) {
-                    aviso.textContent = `Cargando voces de ${juego}`;
+                if (isHTML(aviso)) {
+                    aviso.textContent = `${juego}`;
                 }
 
                 escucharSonido.init(href, function() {
