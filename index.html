@@ -2,207 +2,167 @@
 <html lang="es-VE" prefix="og: https://ogp.me/ns#">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-   <title>Conozca el sonido de las letras en español</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Conozca el sonido de las letras en español</title>
 
-   <!-- Protocolo OpenGraph -->
-   <meta property="og:title" content="Conozca el sonido de las letras en español">
-   <meta property="og:type" content="website">
-   <meta property="og:description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
-   <meta name="description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
-   
-   <!-- Manifest -->
-   <link href="manifest.json" rel="manifest">
+    <!-- Protocolo OpenGraph -->
+    <meta property="og:title" content="Conozca el sonido de las letras en español">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
+    <meta name="description" content="Aprenda mediante sonido, las vocales, consonantes y números, además de otras opciones de aprendizaje">
 
-   <!-- Favicon -->
-   <link type="image/x-icon" href="favicon.ico?v1" rel="shortcut icon">
-   <link type="image/png" href="favicon.png?v1" rel="icon">
+    <!-- Manifest -->
+    <link href="manifest.json" rel="manifest">
 
-   <!-- Fuentes tipográficas -->
-   <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet">
+    <!-- Favicon -->
+    <link type="image/x-icon" href="favicon.ico?v1" rel="shortcut icon">
+    <link type="image/png" href="favicon.png?v1" rel="icon">
 
-   <!-- Estilos -->
-   <link href="vista/css/normalize.css" rel="stylesheet">
-   <link href="vista/css/style.css?v1.4.2" rel="stylesheet">
+    <!-- Fuentes tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link href="vista/css/normalize.css" rel="stylesheet">
+    <link href="vista/css/style.css?v1.4.2" rel="stylesheet">
 </head>
 
 <body>
-   <main class="main" id="app">
-      <header class="header main__inner main__inner--header">
-         <div class="header__item">
-            <div class="logo">
-               <div class="logo__item logo__item--image">
-                  <a class="logo__enlace" data-src="{{ logo }}" href="./"></a>
-               </div>
-
-               <div class="logo__item">
-                  <h1>{{ title }}</h1>
-                  <h3>{{ indicaciones }}</h3>
-               </div>
-
+    <main class="main" id="app">
+        <header class="header main__inner main__inner--header">
+            <div class="header__item">
+                <div class="logo">
+                    <div class="logo__item logo__item--image">
+                        <a class="logo__enlace" data-src="{{ logo }}" href="./"></a>
+                    </div>
+                    <div class="logo__item">
+                        <h1>{{ title }}</h1>
+                        <h3>{{ indicaciones }}</h3>
+                    </div>
+                </div>
             </div>
-         </div>
-      </header>
+        </header>
+        <div class="content ubuntu-font main__inner main__inner--content">
+            <!-- Menú de juegos -->
+            <div class="content__inner">
+                <h3>¿Qué debo hacer?</h3>
+                <hr>
+                <p>Seleccionar una lección para que su niño/a conozca el sonido de las vocales, consonantes, números, entre otras opciones disponibles.</p>
+                <blockquote class="cita">
+                    <h4>Importante</h4>
+                    <p>Se está trabajando en estos momentos en la optimización del rendimiento de esta web, a la vez que se está trabajando para agregar nuevos juegos de aprendizaje. Por ahora, están disponibles en esta web el sonido de las <strong>vocales, consonantes y números.</strong></p>
+                </blockquote>
 
-      <div class="content ubuntu-font main__inner main__inner--content">
-         <!-- Menú de juegos -->
-         <div class="content__inner">
-            <h3>¿Qué debo hacer?</h3>
-            <hr>
+                <h3>Seleccione una lección para su niño/a</h3>
 
-            <p>Seleccionar una lección para que su niño/a conozca el sonido de las vocales, consonantes, números, entre otras opciones disponibles.</p>
-            <blockquote class="cita">
-               <h4>Importante</h4>
-               <p>Se está trabajando en estos momentos en la optimización del rendimiento de esta web, a la vez que se está trabajando para agregar nuevos juegos de aprendizaje. Por ahora, están disponibles en esta web el sonido de las <strong>vocales, consonantes y números.</strong></p>
-            </blockquote>
-
-            </p>
-
-            <h3>Seleccione una lección para su niño/a</h3>
-            <div class="content__inner juegos">
-               <a class="juegos__item juegos__item--text" data-juego="Letras y números" data-href="{{ letras-numeros }}" href="#">
-                  <h3>Letras y números</h3>
-                  <span data-src="multimedia/icons/volumen-music.svg"></span>
-                  <span>Presiona aquí para escuchar</span>
-               </a>
+                <div class="content__inner juegos">
+                    <a class="juegos__item juegos__item--text" data-juego="Letras y números" data-href="{{ letras-numeros }}" href="#">
+                        <h3>Letras y números</h3>
+                        <span data-src="multimedia/icons/volumen-music.svg"></span>
+                        <span>Presiona aquí para escuchar</span>
+                    </a>
+                </div>
+                <!-- <p>Cada etapa de aprendizaje se considerará un juego diferente. El objeto de ser visto como un juego es lograr que el proceso de aprendizaje sea entretenido.</p> -->
             </div>
-
-
-            <!-- <p>Cada etapa de aprendizaje se considerará un juego diferente. El objeto de ser visto como un juego es lograr que el proceso de aprendizaje sea entretenido.</p> -->
-
-         </div>
-
-
-         <!-- Juegos -->
-         <div class="presentar" id="presentar-simbolos">
-            <div class="presentar__inner presentar__inner--contenido">
-               <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
-
-               <div class="simbolo" id="letra">
-                  <div class="flecha"></div>
-               </div>
-
-
-               <nav class="nav nav--modal" id="navigation-modal">
-                  <!-- Controlar entre reproducir o no la música de fondo -->
-                  <div class="audio audio--active nav__item">
-                     <button class="audio__button" id="volumen" data-src="multimedia/icons/music.svg"
-                        data-toggle-music></button>
-                     <button class="audio__button" id="volumen" data-src="multimedia/icons/music-mute.svg"
-                        data-toggle-music></button>
-                  </div>
-
-                  <!-- Seleccionar el tipo de voz -->
-                  <div class="voz ubuntu-font nav__item">
-                     <label class="voz__item" data-juego="no">
-                        <input name="tipo" type="checkbox" data-tipo="checkbox">
-                        <span class="voz__marcado" data-src="multimedia/icons/mujer-sonido.svg"
-                           title="Voz masculina/femenina"></span>
-                     </label>
-                  </div>
-
-                  <!-- Salir de la ventana modal -->
-                  <div class="salir nav__item" id="salir">
-                     <a data-salir href="#"></a>
-                  </div>
-               </nav>
+            <!-- Juegos -->
+            <div class="presentar" id="presentar-simbolos">
+                <div class="presentar__inner presentar__inner--contenido">
+                    <div class="marca-de-agua" data-src="{{ marca-de-agua }}"></div>
+                    <div class="simbolo" id="letra">
+                        <div class="flecha"></div>
+                    </div>
+                    <nav class="nav nav--modal" id="navigation-modal">
+                        <!-- Controlar entre reproducir o no la música de fondo -->
+                        <div class="audio audio--active nav__item">
+                            <button class="audio__button" id="volumen" data-src="multimedia/icons/music.svg" data-toggle-music></button>
+                            <button class="audio__button" id="volumen" data-src="multimedia/icons/music-mute.svg" data-toggle-music></button>
+                        </div>
+                        <!-- Seleccionar el tipo de voz -->
+                        <div class="voz ubuntu-font nav__item">
+                            <label class="voz__item" data-juego="no">
+                                <input name="tipo" type="checkbox" data-tipo="checkbox">
+                                <span class="voz__marcado" data-src="multimedia/icons/mujer-sonido.svg" title="Voz masculina/femenina"></span>
+                            </label>
+                        </div>
+                        <!-- Salir de la ventana modal -->
+                        <div class="salir nav__item" id="salir">
+                            <a data-salir href="#"></a>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Panel de teclados -->
+                <div class="presentar__inner presentar__inner--panel">
+                    <div class="opciones">
+                        <div class="opciones__item opciones__item--pestannas">
+                            <div class="pestannas" id="pestannas">
+                                <button class="pestannas__button" data-sonido="multimedia/audio/menu/vocales.mp3" data-tipo="vocal">Vocales</button>
+                                <button class="pestannas__button" data-sonido="multimedia/audio/menu/consonantes.mp3" data-tipo="consonante">Consonantes</button>
+                                <button class="pestannas__button" data-sonido="multimedia/audio/menu/numeros.mp3" data-tipo="numero">Números</button>
+                            </div>
+                        </div>
+                        <div class="opciones__item opciones__item--teclado" id="teclado"></div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Panel de teclados -->
-            <div class="presentar__inner presentar__inner--panel">
-               <div class="opciones">
-                  <div class="opciones__item opciones__item--pestannas">
-                     <div class="pestannas" id="pestannas">
-                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/vocales.mp3"
-                           data-tipo="vocal">Vocales</button>
-                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/consonantes.mp3"
-                           data-tipo="consonante">Consonantes</button>
-                        <button class="pestannas__button" data-sonido="multimedia/audio/menu/numeros.mp3"
-                           data-tipo="numero">Números</button>
-                     </div>
-                  </div>
-                  <div class="opciones__item opciones__item--teclado" id="teclado"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <footer class="footer alata">
-         <div class="footer__inner">
-            <div class="footer__left">
-               <div class="logo logo--footer">
-                  <a class="logo__enlace" href="./#">
-                     <img src="multimedia/icons/logo-footer.svg" alt="Logotipo">
-                  </a>
-               </div>
-            </div>
-
-            <div class="footer__right">
-               <nav class="footer__nav">
-                  <ul class="menu menu--media">
-                     <li class="menu__item">
-                        <a class="menu__enlace menu__enlace--media"
-                           href="https://es.stackoverflow.com/users/67242/david-e-luna-m?tab=profile" target="_blank">
-                           <img src="multimedia/icons/stackoverflow.svg" title="Perfil en Stack Overflow"
-                              alt="Stack Overflow">
+        </div>
+        <footer class="footer alata">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="logo logo--footer">
+                        <a class="logo__enlace" href="./#">
+                            <img src="multimedia/icons/logo-footer.svg" alt="Logotipo">
                         </a>
-                     </li>
-
-                     <li class="menu__item">
-                        <a class="menu__enlace menu__enlace--media" href="https://twitter.com/dlunamontilla"
-                           target="_blank">
-                           <img src="multimedia/icons/twitter.svg" title="Perfil en Twitter" alt="Twitter">
-                        </a>
-                     </li>
-
-                     <li class="menu__item">
-                        <a class="menu__enlace menu__enlace--media" href="https://github.com/dlunamontilla/"
-                           target="_blank">
-                           <img src="multimedia/icons/github.svg" title="Perfil en GitHub" alt="GitHub">
-                        </a>
-                     </li>
-
-                     <li class="menu__item">
-                        <a class="menu__enlace menu__enlace--media" href="https://codepen.io/dlunamontilla/"
-                           target="_blank">
-                           <img src="multimedia/icons/codepen.svg" title="Perfil en CodePen" alt="CodePen">
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
-
-               <div class="autor">
-                  © 2021 - David E Luna M.
-               </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <nav class="footer__nav">
+                        <ul class="menu menu--media">
+                            <li class="menu__item">
+                                <a class="menu__enlace menu__enlace--media" href="https://es.stackoverflow.com/users/67242/david-e-luna-m?tab=profile" target="_blank">
+                                    <img src="multimedia/icons/stackoverflow.svg" title="Perfil en Stack Overflow" alt="Stack Overflow">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__enlace menu__enlace--media" href="https://twitter.com/dlunamontilla" target="_blank">
+                                    <img src="multimedia/icons/twitter.svg" title="Perfil en Twitter" alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__enlace menu__enlace--media" href="https://github.com/dlunamontilla/" target="_blank">
+                                    <img src="multimedia/icons/github.svg" title="Perfil en GitHub" alt="GitHub">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__enlace menu__enlace--media" href="https://codepen.io/dlunamontilla/" target="_blank">
+                                    <img src="multimedia/icons/codepen.svg" title="Perfil en CodePen" alt="CodePen">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="autor">
+                        © 2021 - David E Luna M.
+                    </div>
+                </div>
             </div>
-         </div>
-
-         <div class="attribution">
-            Music - <strong>"Crazy Glue"</strong> by <a href="https://joshwoodward.com/"
-               title="Free download: http://joshwoodward.com/ " target="_blank">Josh Woodward</a>.
-         </div>
-      </footer>
-
-      <!-- Avisos enviados al usuario -->
-      <div class="loading none" id="loading">
-         <div class="loading__mensaje">
-            <div class="caja giro-constante size">
-               <svg class="lienzo giro-intervalo size" viewBox="0 0 140 140">
-                  <!-- Circunferencia con borde animado -->
-                  <circle class="cir cir--completando giro-trazo" cx="70" cy="70" r="65"></circle>
-               </svg>
+            <div class="attribution">
+                Music - <strong>"Crazy Glue"</strong> by <a href="https://joshwoodward.com/" title="Free download: http://joshwoodward.com/ " target="_blank">Josh Woodward</a>.
             </div>
-
-            <span id="aviso" class="loading__aviso"></span>
-         </div>
-      </div>
-   </main>
-
-   <!-- JavaScript -->
-   <script src="app/js/main.js?v1.4.2" type="module"></script>
+        </footer>
+        <!-- Avisos enviados al usuario -->
+        <div class="loading none" id="loading">
+            <div class="loading__mensaje">
+                <div class="caja giro-constante size">
+                    <svg class="lienzo giro-intervalo size" viewBox="0 0 140 140">
+                        <!-- Circunferencia con borde animado -->
+                        <circle class="cir cir--completando giro-trazo" cx="70" cy="70" r="65"></circle>
+                    </svg>
+                </div>
+                <span id="aviso" class="loading__aviso"></span>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="app/js/main.js?v1.4.2" type="module"></script>
 </body>
 
 </html>

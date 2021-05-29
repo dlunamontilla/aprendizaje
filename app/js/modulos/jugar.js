@@ -38,7 +38,7 @@ const jugar = (parametros) => {
 
         escucharAudio.init("#loading", data => {
             // Pronunciar con voz la etiqueta de la pestaña:
-            pestannas("#pestannas", function (pintarTeclado, teclado) {
+            pestannas("#pestannas", function(pintarTeclado, teclado) {
                 // Abrir ventana modal:
                 ventanaModal.classList.add("presentar--show");
 

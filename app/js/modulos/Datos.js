@@ -1,8 +1,3 @@
-// const Datos = () => {
-//     // {{([^}]*)}}
-// }
-
-
 class Datos {
     constructor( selector = "#app" ) {
         this.claves = /{{([^}]*)}}/g;

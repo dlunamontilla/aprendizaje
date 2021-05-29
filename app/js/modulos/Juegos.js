@@ -4,7 +4,6 @@ import { isDefined, isHTML, isNull } from "./evaluar.js";
 class Juegos {
 
     /**
-     * 
      * @param {object} selectores 
      */
     constructor(selectores) {
