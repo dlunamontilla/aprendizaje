@@ -21,7 +21,6 @@ datos.render(() => {
     };
 });
 
-// letras("#letra");
 
 imagenSVG();
 
